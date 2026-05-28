@@ -1,10 +1,10 @@
-const CACHE_NAME = "twoj-jadlospis-v1.0.8";
+const CACHE_NAME = "twoj-jadlospis-v1.0.7";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css?v=1.0.8",
-  "./app.js?v=1.0.8",
-  "./manifest.webmanifest?v=1.0.8",
+  "./styles.css?v=1.0.7",
+  "./app.js?v=1.0.7",
+  "./manifest.webmanifest?v=1.0.7",
   "./offline.html",
   "./assets/icon-192.png",
   "./assets/icon-512.png",

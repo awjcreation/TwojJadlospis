@@ -8,7 +8,7 @@
 (() => {
   "use strict";
 
-  const VERSION = "1.0.8";
+  const VERSION = "1.0.7";
   const STORAGE_KEY = "twoj-jadlospis-state-v1";
   const STORAGE_BACKUP_KEY = "twoj-jadlospis-state-v1-backup";
 
@@ -3413,46 +3413,8 @@ render();
     }
   }
 
-  
-  function routeVisualClass() {
-    return `route-${state.ui.route || "today"}`;
-  }
-
-  function emptyState(icon, title, text, actionLabel = "", action = "") {
-    return `
-      <section class="empty-state">
-        <span class="material-symbols-rounded">${icon}</span>
-        <h2>${title}</h2>
-        <p>${text}</p>
-        ${actionLabel && action ? `<button class="secondary-btn" type="button" data-action="${action}">${actionLabel}</button>` : ""}
-      </section>
-    `;
-  }
-
-  function todayDashboard(plan, totals = {}) {
-    const target = Number(Object.values(state.settings.mealCalories || {}).reduce((sum, value) => sum + Number(value || 0), 0)) || 1600;
-    const kcal = Math.round(Number(totals.kcal || 0));
-    const progress = Math.min(100, Math.max(0, Math.round((kcal / target) * 100)));
-    const date = parseISODate(state.ui.selectedDate || todayISO);
-
-    return `
-      <section class="today-dashboard card">
-        <div>
-          <p class="eyebrow">${date.toLocaleDateString("pl-PL", { weekday: "long" })}</p>
-          <h2>${formatDate(date)}</h2>
-          <p class="muted">${plan ? escapeHTML(plan.name) : "Brak przypisanego jadłospisu"}</p>
-        </div>
-        <div class="kcal-ring" style="--progress:${progress}">
-          <strong>${kcal}</strong>
-          <span>/ ${target} kcal</span>
-        </div>
-      </section>
-    `;
-  }
-
   function render() {
     applyTheme();
-    app.className = `app-view ${routeVisualClass()}`;
     syncNav();
     const route = state.ui.route;
 
@@ -3488,7 +3450,6 @@ render();
             <h1 class="app-title">Twój jadłospis</h1>
           </div>
         </header>
-        ${todayDashboard(typeof plan !== "undefined" ? plan : (typeof selectedPlan !== "undefined" ? selectedPlan : null), typeof dayTotals !== "undefined" && (typeof plan !== "undefined" ? plan : null) ? dayTotals(plan) : {})}
 
         <section class="day-switch" aria-label="Nawigacja po dniach">
           <button class="icon-btn" type="button" data-action="prev-day" aria-label="Poprzedni dzień"><span class="material-symbols-rounded">chevron_left</span></button>
@@ -6507,7 +6468,6 @@ function openProductEditModal(productName) {
   }
 
   function openActions(title, actions) {
-    modalRoot.classList.add("is-actions-sheet");
     openModal(title, `<div class="form">${actions.map((a, i) => `<button class="${a.danger ? "danger-btn" : "secondary-btn"}" type="button" data-action-index="${i}">${a.label}</button>`).join("")}</div>`);
     modalRoot.querySelectorAll("[data-action-index]").forEach(btn => {
       btn.addEventListener("click", () => {
@@ -6523,7 +6483,6 @@ function openProductEditModal(productName) {
   }
 
   function openModal(title, body) {
-    modalRoot.classList.remove("is-actions-sheet");
     modalRoot.innerHTML = `
       <div class="modal-backdrop" role="dialog" aria-modal="true">
         <section class="modal">

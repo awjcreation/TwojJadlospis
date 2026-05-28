@@ -1,14 +1,3 @@
-## 1.0.8
-
-- pakiet poprawek wizualnych,
-- dashboard dnia,
-- empty states,
-- bottom sheets dla akcji,
-- glass navigation,
-- animacje widoków,
-- ulepszony dark mode,
-- desktop compact layout.
-
 # Changelog
 
 ## 1.0.0
