@@ -1,0 +1,20 @@
+{
+  "id": "import-ryba-pieczona",
+  "title": "ryba pieczona",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-ryba-93696",
+      "name": "ryba",
+      "weight": 200.0,
+      "kcal100": 160.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

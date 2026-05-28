@@ -1,0 +1,47 @@
+{
+  "id": "import-niedziela-vii-dzien-obiad",
+  "title": "Obiad",
+  "category": "Importowane posiłki",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-np-mintaj-30683",
+      "name": "np. mintaj",
+      "weight": 200.0,
+      "kcal100": 80.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-warzywa-mieszane-55857",
+      "name": "warzywa mieszane",
+      "weight": 200.0,
+      "kcal100": 37.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-olej-74705",
+      "name": "olej",
+      "weight": 18.0,
+      "kcal100": 877.8,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-ziemniaki-gotowane-82929",
+      "name": "ziemniaki gotowane",
+      "weight": 120.0,
+      "kcal100": 78.3,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

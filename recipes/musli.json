@@ -1,0 +1,38 @@
+{
+  "id": "import-musli",
+  "title": "Musli",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-musli-naturalne-25107",
+      "name": "musli naturalne",
+      "weight": 80.0,
+      "kcal100": 366.2,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-melon-42111",
+      "name": "melon",
+      "weight": 120.0,
+      "kcal100": 40.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-jogurt-naturalny-42575",
+      "name": "jogurt naturalny",
+      "weight": 250.0,
+      "kcal100": 61.2,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

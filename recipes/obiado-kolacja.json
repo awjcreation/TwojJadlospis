@@ -1,0 +1,92 @@
+{
+  "id": "import-sobota-i-dzien-obiado-kolacja",
+  "title": "Obiado-kolacja",
+  "category": "Importowane posiłki",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-pomidor-34114",
+      "name": "pomidor",
+      "weight": 100.0,
+      "kcal100": 28.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-papryka-45855",
+      "name": "papryka",
+      "weight": 80.0,
+      "kcal100": 28.7,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-feta-light-93675",
+      "name": "feta light",
+      "weight": 40.0,
+      "kcal100": 180.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-cebula-24207",
+      "name": "cebula",
+      "weight": 100.0,
+      "kcal100": 23.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-ogorki-73648",
+      "name": "ogórki",
+      "weight": 100.0,
+      "kcal100": 14.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-oliwa-88136",
+      "name": "oliwa",
+      "weight": 18.0,
+      "kcal100": 894.4,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-salata-lodowa-96757",
+      "name": "sałata lodowa",
+      "weight": 50.0,
+      "kcal100": 32.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-grahamka-26376",
+      "name": "grahamka",
+      "weight": 50.0,
+      "kcal100": 260.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-maslo-97542",
+      "name": "masło",
+      "weight": 5.0,
+      "kcal100": 780.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

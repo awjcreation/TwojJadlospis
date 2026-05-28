@@ -1,0 +1,29 @@
+{
+  "id": "import-koktajl",
+  "title": "koktajl",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-truskawki-mrozone-4806",
+      "name": "truskawki mrożone",
+      "weight": 150.0,
+      "kcal100": 28.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-kefir-30793",
+      "name": "kefir",
+      "weight": 200.0,
+      "kcal100": 51.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

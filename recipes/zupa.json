@@ -1,0 +1,20 @@
+{
+  "id": "import-zupa",
+  "title": "zupa",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-typu-barszcz-bialy-98688",
+      "name": "typu barszcz biały",
+      "weight": 200.0,
+      "kcal100": 120.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

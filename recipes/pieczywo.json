@@ -1,0 +1,29 @@
+{
+  "id": "import-pieczywo",
+  "title": "pieczywo",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-grahamka-26376",
+      "name": "grahamka",
+      "weight": 50.0,
+      "kcal100": 260.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-maslo-97542",
+      "name": "masło",
+      "weight": 5.0,
+      "kcal100": 780.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

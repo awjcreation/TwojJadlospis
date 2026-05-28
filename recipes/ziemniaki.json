@@ -1,0 +1,20 @@
+{
+  "id": "import-ziemniaki",
+  "title": "ziemniaki",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-ziemniaki-gotowane-60679",
+      "name": "ziemniaki gotowane",
+      "weight": 180.0,
+      "kcal100": 77.8,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

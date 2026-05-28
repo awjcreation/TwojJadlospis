@@ -1,0 +1,29 @@
+{
+  "id": "import-ryba-smazona-saute",
+  "title": "ryba smażona saute",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-mintaj-sol-cytryna-42975",
+      "name": "mintaj, sól, cytryna",
+      "weight": 200.0,
+      "kcal100": 70.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-olej-przyprawy-42995",
+      "name": "olej, przyprawy",
+      "weight": 18.0,
+      "kcal100": 877.8,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

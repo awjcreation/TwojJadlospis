@@ -1,0 +1,29 @@
+{
+  "id": "import-surowka",
+  "title": "surówka",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-warzywa-wiosenne-64742",
+      "name": "warzywa wiosenne",
+      "weight": 200.0,
+      "kcal100": 40.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-jogurt-naturalny-23976",
+      "name": "jogurt naturalny",
+      "weight": 48.0,
+      "kcal100": 60.4,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

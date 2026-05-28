@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "checks": {
+    "js_syntax": true,
+    "manifest_json": true,
+    "doctype": true,
+    "html_lang_pl": true,
+    "viewport": true,
+    "manifest_link": true,
+    "app_root": true,
+    "modal_root": true,
+    "theme_color": true,
+    "service_worker_register": true,
+    "manifest_version": true,
+    "manifest_display": true,
+    "manifest_start_url": true,
+    "manifest_icons": true,
+    "settings_uses_manifest_version": true,
+    "no_audit_files": true,
+    "docs": true,
+    "css_braces_balanced": true,
+    "sw_cache_version": true,
+    "sw_has_install": true,
+    "sw_has_fetch": true
+  },
+  "js_stderr": "",
+  "note": "Walidacja W3C została zastąpiona lokalną walidacją statyczną HTML/PWA/JS/CSS/JSON w tym środowisku."
+}

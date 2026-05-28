@@ -1,0 +1,20 @@
+{
+  "id": "import-owoc",
+  "title": "owoc",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-jablko-32701",
+      "name": "jabłko",
+      "weight": 200.0,
+      "kcal100": 47.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

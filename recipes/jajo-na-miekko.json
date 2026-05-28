@@ -1,0 +1,29 @@
+{
+  "id": "import-jajo-na-miekko",
+  "title": "jajo na miękko",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-jajo-99543",
+      "name": "jajo",
+      "weight": 50.0,
+      "kcal100": 152.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-szczypiorek-salata-74943",
+      "name": "szczypiorek, sałata",
+      "weight": 10.0,
+      "kcal100": 10.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

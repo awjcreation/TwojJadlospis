@@ -1,0 +1,29 @@
+{
+  "id": "import-sobota-i-dzien-lunch",
+  "title": "Lunch",
+  "category": "Importowane posiłki",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-ryba-93696",
+      "name": "ryba",
+      "weight": 200.0,
+      "kcal100": 160.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-warzywa-82448",
+      "name": "warzywa",
+      "weight": 200.0,
+      "kcal100": 60.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

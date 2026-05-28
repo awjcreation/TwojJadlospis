@@ -1,0 +1,38 @@
+{
+  "id": "import-kanapka",
+  "title": "kanapka",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-grahamka-26376",
+      "name": "grahamka",
+      "weight": 50.0,
+      "kcal100": 260.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-ser-zolty-hit-36727",
+      "name": "ser żółty HIT",
+      "weight": 20.0,
+      "kcal100": 300.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-koncentrat-pomidorowy-74440",
+      "name": "koncentrat pomidorowy",
+      "weight": 9.0,
+      "kcal100": 100.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

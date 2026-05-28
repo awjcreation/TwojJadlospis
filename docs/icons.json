@@ -1,0 +1,74 @@
+{
+  "version": "4.8.0",
+  "source_file": "zestaw_ikon_produktow_pwa-1.html",
+  "icons": [
+    {
+      "category": "Warzywa",
+      "symbol": "nutrition"
+    },
+    {
+      "category": "Owoce",
+      "symbol": "spa"
+    },
+    {
+      "category": "Pieczywo",
+      "symbol": "bakery_dining"
+    },
+    {
+      "category": "Zboża",
+      "symbol": "wheat"
+    },
+    {
+      "category": "Nabiał",
+      "symbol": "Grocery"
+    },
+    {
+      "category": "Jaja",
+      "symbol": "egg_alt"
+    },
+    {
+      "category": "Mięso",
+      "symbol": "savings"
+    },
+    {
+      "category": "Ryby",
+      "symbol": "set_meal"
+    },
+    {
+      "category": "Strączki",
+      "symbol": "avocado_bean"
+    },
+    {
+      "category": "Tłuszcze",
+      "symbol": "water_do"
+    },
+    {
+      "category": "Orzechy",
+      "symbol": "neurology"
+    },
+    {
+      "category": "Przyprawy i zioła",
+      "symbol": "psychiatry"
+    },
+    {
+      "category": "Dodatki",
+      "symbol": "Local_pizza"
+    },
+    {
+      "category": "Napoje",
+      "symbol": "water_medium"
+    },
+    {
+      "category": "Produkty użytkownika",
+      "symbol": "person"
+    },
+    {
+      "category": "Produkty z przepisów",
+      "symbol": "menu_book"
+    },
+    {
+      "category": "Inne",
+      "symbol": "shopping_cart"
+    }
+  ]
+}

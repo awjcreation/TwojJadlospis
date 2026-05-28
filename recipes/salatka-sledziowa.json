@@ -1,0 +1,56 @@
+{
+  "id": "import-salatka-sledziowa",
+  "title": "sałatka śledziowa",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-sledz-45499",
+      "name": "śledź",
+      "weight": 100.0,
+      "kcal100": 87.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-cebula-72414",
+      "name": "cebula",
+      "weight": 40.0,
+      "kcal100": 32.5,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-ziemniaki-gotowane-2192",
+      "name": "ziemniaki gotowane",
+      "weight": 60.0,
+      "kcal100": 78.3,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-jajo-w-kosteczke-53717",
+      "name": "jajo w kosteczkę",
+      "weight": 50.0,
+      "kcal100": 152.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-oliwa-37209",
+      "name": "oliwa",
+      "weight": 9.0,
+      "kcal100": 900.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

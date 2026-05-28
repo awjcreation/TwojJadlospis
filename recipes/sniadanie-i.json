@@ -1,0 +1,47 @@
+{
+  "id": "import-niedziela-vii-dzien-sniadanie-i",
+  "title": "Śniadanie I",
+  "category": "Importowane posiłki",
+  "recipeType": "single",
+  "mealCategory": "breakfast1",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-sok-owocowy-swiezy-8605",
+      "name": "sok owocowy świeży",
+      "weight": 200.0,
+      "kcal100": 44.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-musli-naturalne-25107",
+      "name": "musli naturalne",
+      "weight": 80.0,
+      "kcal100": 366.2,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-banan-39240",
+      "name": "banan",
+      "weight": 60.0,
+      "kcal100": 96.7,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-jogurt-naturalny-42575",
+      "name": "jogurt naturalny",
+      "weight": 250.0,
+      "kcal100": 61.2,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

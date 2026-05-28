@@ -1,0 +1,38 @@
+{
+  "id": "import-sroda-ii-dzien-kolacja",
+  "title": "Kolacja",
+  "category": "Importowane posiłki",
+  "recipeType": "single",
+  "mealCategory": "dinner",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-mintaj-sol-cytryna-42975",
+      "name": "mintaj, sól, cytryna",
+      "weight": 200.0,
+      "kcal100": 70.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-olej-przyprawy-42995",
+      "name": "olej, przyprawy",
+      "weight": 18.0,
+      "kcal100": 877.8,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-kiszona-kapusta-marchew-63989",
+      "name": "kiszona kapusta, marchew",
+      "weight": 150.0,
+      "kcal100": 30.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

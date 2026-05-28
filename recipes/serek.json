@@ -1,0 +1,20 @@
+{
+  "id": "import-serek",
+  "title": "serek",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-danio-80249",
+      "name": "danio",
+      "weight": 150.0,
+      "kcal100": 161.3,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

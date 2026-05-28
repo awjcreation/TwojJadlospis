@@ -1,0 +1,20 @@
+{
+  "id": "import-napoj-b-c",
+  "title": "napój b/c",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-herbata-zielona-5049",
+      "name": "herbata zielona",
+      "weight": 0,
+      "kcal100": 0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

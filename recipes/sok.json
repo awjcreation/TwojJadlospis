@@ -1,0 +1,20 @@
+{
+  "id": "import-sok",
+  "title": "sok",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-sok-owocowy-swiezy-8605",
+      "name": "sok owocowy świeży",
+      "weight": 200.0,
+      "kcal100": 44.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

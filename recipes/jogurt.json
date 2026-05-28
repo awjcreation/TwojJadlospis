@@ -1,0 +1,20 @@
+{
+  "id": "import-jogurt",
+  "title": "jogurt",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-jogurt-owocowy-pitny-36989",
+      "name": "jogurt owocowy pitny",
+      "weight": 250.0,
+      "kcal100": 81.2,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

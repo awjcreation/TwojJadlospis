@@ -1,0 +1,38 @@
+{
+  "id": "import-ryba-pieczona-w-folii",
+  "title": "ryba pieczona w folii",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-mintaj-95335",
+      "name": "mintaj",
+      "weight": 150.0,
+      "kcal100": 160.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-przyprawy-27462",
+      "name": "przyprawy",
+      "weight": 0,
+      "kcal100": 0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-olej-62500",
+      "name": "olej",
+      "weight": 18.0,
+      "kcal100": 872.2,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

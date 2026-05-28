@@ -1,0 +1,47 @@
+{
+  "id": "import-salatka-owocowa",
+  "title": "sałatka owocowa",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-kiwi-73552",
+      "name": "kiwi",
+      "weight": 80.0,
+      "kcal100": 40.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-jogurt-naturalny-49677",
+      "name": "jogurt naturalny",
+      "weight": 48.0,
+      "kcal100": 61.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-banan-47921",
+      "name": "banan",
+      "weight": 60.0,
+      "kcal100": 97.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-pomarancza-98082",
+      "name": "pomarańcza",
+      "weight": 100.0,
+      "kcal100": 47.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

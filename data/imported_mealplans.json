@@ -1,0 +1,1025 @@
+[
+  {
+    "id": "import-plan-poniedzialek-vi-dzien",
+    "name": "Poniedziałek – VI dzień",
+    "meals": [
+      {
+        "meal": "breakfast1",
+        "recipeId": "import-poniedzialek-vi-dzien-sniadanie-i",
+        "portionWeight": 650.0,
+        "customIngredients": [
+          {
+            "id": "ing-sok-owocowy-swiezy-8605",
+            "name": "sok owocowy świeży",
+            "weight": 200.0,
+            "kcal100": 44.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-musli-naturalne-25107",
+            "name": "musli naturalne",
+            "weight": 80.0,
+            "kcal100": 366.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-melon-42111",
+            "name": "melon",
+            "weight": 120.0,
+            "kcal100": 40.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-42575",
+            "name": "jogurt naturalny",
+            "weight": 250.0,
+            "kcal100": 61.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "breakfast2",
+        "recipeId": "import-kanapka",
+        "portionWeight": 79.0,
+        "customIngredients": [
+          {
+            "id": "ing-grahamka-26376",
+            "name": "grahamka",
+            "weight": 50.0,
+            "kcal100": 260.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-ser-zolty-hit-36727",
+            "name": "ser żółty HIT",
+            "weight": 20.0,
+            "kcal100": 300.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-koncentrat-pomidorowy-74440",
+            "name": "koncentrat pomidorowy",
+            "weight": 9.0,
+            "kcal100": 100.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "lunch",
+        "recipeId": "import-poniedzialek-vi-dzien-obiad",
+        "portionWeight": 596.0,
+        "customIngredients": [
+          {
+            "id": "ing-warzywa-wiosenne-64742",
+            "name": "warzywa wiosenne",
+            "weight": 200.0,
+            "kcal100": 40.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-23976",
+            "name": "jogurt naturalny",
+            "weight": 48.0,
+            "kcal100": 60.4,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-mintaj-95335",
+            "name": "mintaj",
+            "weight": 150.0,
+            "kcal100": 160.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-przyprawy-27462",
+            "name": "przyprawy",
+            "weight": 0,
+            "kcal100": 0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-olej-62500",
+            "name": "olej",
+            "weight": 18.0,
+            "kcal100": 872.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-ziemniaki-gotowane-60679",
+            "name": "ziemniaki gotowane",
+            "weight": 180.0,
+            "kcal100": 77.8,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "dinner",
+        "recipeId": "import-koktajl",
+        "portionWeight": 350.0,
+        "customIngredients": [
+          {
+            "id": "ing-truskawki-mrozone-4806",
+            "name": "truskawki mrożone",
+            "weight": 150.0,
+            "kcal100": 28.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-kefir-30793",
+            "name": "kefir",
+            "weight": 200.0,
+            "kcal100": 51.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "import-plan-wtorek-v-dzien",
+    "name": "Wtorek – V dzień",
+    "meals": [
+      {
+        "meal": "breakfast1",
+        "recipeId": "import-wtorek-v-dzien-sniadanie-i",
+        "portionWeight": 640.0,
+        "customIngredients": [
+          {
+            "id": "ing-sok-owocowy-swiezy-8605",
+            "name": "sok owocowy świeży",
+            "weight": 200.0,
+            "kcal100": 44.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-musli-naturalne-14616",
+            "name": "musli naturalne",
+            "weight": 70.0,
+            "kcal100": 365.7,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-melon-42111",
+            "name": "melon",
+            "weight": 120.0,
+            "kcal100": 40.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-42575",
+            "name": "jogurt naturalny",
+            "weight": 250.0,
+            "kcal100": 61.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "breakfast2",
+        "recipeId": "import-wtorek-v-dzien-sniadanie-ii",
+        "portionWeight": 450.0,
+        "customIngredients": [
+          {
+            "id": "ing-jablko-32701",
+            "name": "jabłko",
+            "weight": 200.0,
+            "kcal100": 47.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-grahamka-26376",
+            "name": "grahamka",
+            "weight": 50.0,
+            "kcal100": 260.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-kefir-30793",
+            "name": "kefir",
+            "weight": 200.0,
+            "kcal100": 51.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "lunch",
+        "recipeId": "import-wtorek-v-dzien-lunch",
+        "portionWeight": 400.0,
+        "customIngredients": [
+          {
+            "id": "ing-ryba-93696",
+            "name": "ryba",
+            "weight": 200.0,
+            "kcal100": 160.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-warzywa-82448",
+            "name": "warzywa",
+            "weight": 200.0,
+            "kcal100": 60.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "dinner",
+        "recipeId": "import-warzywa-z-patelni",
+        "portionWeight": 368.0,
+        "customIngredients": [
+          {
+            "id": "ing-olej-20223",
+            "name": "olej",
+            "weight": 18.0,
+            "kcal100": 844.4,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jajo-99543",
+            "name": "jajo",
+            "weight": 50.0,
+            "kcal100": 152.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-warzywa-mrozone-2684",
+            "name": "warzywa mrożone",
+            "weight": 300.0,
+            "kcal100": 37.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "import-plan-sroda-ii-dzien",
+    "name": "Środa – II dzień",
+    "meals": [
+      {
+        "meal": "breakfast1",
+        "recipeId": "import-sroda-ii-dzien-sniadanie-i",
+        "portionWeight": 580.0,
+        "customIngredients": [
+          {
+            "id": "ing-sok-owocowy-swiezy-8605",
+            "name": "sok owocowy świeży",
+            "weight": 200.0,
+            "kcal100": 44.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-musli-naturalne-81458",
+            "name": "musli naturalne",
+            "weight": 60.0,
+            "kcal100": 366.7,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-banan-90552",
+            "name": "banan",
+            "weight": 120.0,
+            "kcal100": 96.7,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-38721",
+            "name": "jogurt naturalny",
+            "weight": 200.0,
+            "kcal100": 61.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "breakfast2",
+        "recipeId": "import-kanapka",
+        "portionWeight": 79.0,
+        "customIngredients": [
+          {
+            "id": "ing-grahamka-26376",
+            "name": "grahamka",
+            "weight": 50.0,
+            "kcal100": 260.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-ser-zolty-hit-36727",
+            "name": "ser żółty HIT",
+            "weight": 20.0,
+            "kcal100": 300.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-koncentrat-pomidorowy-74440",
+            "name": "koncentrat pomidorowy",
+            "weight": 9.0,
+            "kcal100": 100.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "lunch",
+        "recipeId": "import-sroda-ii-dzien-lunch",
+        "portionWeight": 600.0,
+        "customIngredients": [
+          {
+            "id": "ing-typu-barszcz-bialy-98688",
+            "name": "typu barszcz biały",
+            "weight": 200.0,
+            "kcal100": 120.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jablka-67773",
+            "name": "jabłka",
+            "weight": 400.0,
+            "kcal100": 47.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "dinner",
+        "recipeId": "import-sroda-ii-dzien-kolacja",
+        "portionWeight": 368.0,
+        "customIngredients": [
+          {
+            "id": "ing-mintaj-sol-cytryna-42975",
+            "name": "mintaj, sól, cytryna",
+            "weight": 200.0,
+            "kcal100": 70.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-olej-przyprawy-42995",
+            "name": "olej, przyprawy",
+            "weight": 18.0,
+            "kcal100": 877.8,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-kiszona-kapusta-marchew-63989",
+            "name": "kiszona kapusta, marchew",
+            "weight": 150.0,
+            "kcal100": 30.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "import-plan-czwartek-iii-dzien",
+    "name": "Czwartek – III dzień",
+    "meals": [
+      {
+        "meal": "breakfast1",
+        "recipeId": "import-czwartek-iii-dzien-sniadanie-i",
+        "portionWeight": 590.0,
+        "customIngredients": [
+          {
+            "id": "ing-sok-owocowy-swiezy-8605",
+            "name": "sok owocowy świeży",
+            "weight": 200.0,
+            "kcal100": 44.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-musli-naturalne-25107",
+            "name": "musli naturalne",
+            "weight": 80.0,
+            "kcal100": 366.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-banan-68598",
+            "name": "banan",
+            "weight": 60.0,
+            "kcal100": 98.3,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-42575",
+            "name": "jogurt naturalny",
+            "weight": 250.0,
+            "kcal100": 61.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "breakfast2",
+        "recipeId": "import-jogurt",
+        "portionWeight": 250.0,
+        "customIngredients": [
+          {
+            "id": "ing-jogurt-owocowy-pitny-36989",
+            "name": "jogurt owocowy pitny",
+            "weight": 250.0,
+            "kcal100": 81.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "lunch",
+        "recipeId": "import-czwartek-iii-dzien-lunch",
+        "portionWeight": 350.0,
+        "customIngredients": [
+          {
+            "id": "ing-ryba-6979",
+            "name": "ryba",
+            "weight": 150.0,
+            "kcal100": 160.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-warzywa-82448",
+            "name": "warzywa",
+            "weight": 200.0,
+            "kcal100": 60.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "dinner",
+        "recipeId": "import-makaron-z-serem",
+        "portionWeight": 163.0,
+        "customIngredients": [
+          {
+            "id": "ing-makaron-22613",
+            "name": "makaron",
+            "weight": 60.0,
+            "kcal100": 366.7,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-23976",
+            "name": "jogurt naturalny",
+            "weight": 48.0,
+            "kcal100": 60.4,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-cukier-68696",
+            "name": "cukier",
+            "weight": 5.0,
+            "kcal100": 400.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-ser-bialy-chudy-81888",
+            "name": "ser biały chudy",
+            "weight": 50.0,
+            "kcal100": 104.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "import-plan-piatek-iv-dzien",
+    "name": "Piątek – IV dzień",
+    "meals": [
+      {
+        "meal": "breakfast1",
+        "recipeId": "import-piatek-iv-dzien-sniadanie-i",
+        "portionWeight": 482.0,
+        "customIngredients": [
+          {
+            "id": "ing-sok-owocowy-swiezy-8605",
+            "name": "sok owocowy świeży",
+            "weight": 200.0,
+            "kcal100": 44.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-musli-naturalne-90785",
+            "name": "musli naturalne",
+            "weight": 32.0,
+            "kcal100": 365.6,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-42575",
+            "name": "jogurt naturalny",
+            "weight": 250.0,
+            "kcal100": 61.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "breakfast2",
+        "recipeId": "import-serek",
+        "portionWeight": 150.0,
+        "customIngredients": [
+          {
+            "id": "ing-danio-80249",
+            "name": "danio",
+            "weight": 150.0,
+            "kcal100": 161.3,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "lunch",
+        "recipeId": "import-piatek-iv-dzien-lunch",
+        "portionWeight": 580.0,
+        "customIngredients": [
+          {
+            "id": "ing-ryba-93696",
+            "name": "ryba",
+            "weight": 200.0,
+            "kcal100": 160.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-warzywa-82448",
+            "name": "warzywa",
+            "weight": 200.0,
+            "kcal100": 60.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-ziemniaki-gotowane-60679",
+            "name": "ziemniaki gotowane",
+            "weight": 180.0,
+            "kcal100": 77.8,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "dinner",
+        "recipeId": "import-salatka-sledziowa",
+        "portionWeight": 259.0,
+        "customIngredients": [
+          {
+            "id": "ing-sledz-45499",
+            "name": "śledź",
+            "weight": 100.0,
+            "kcal100": 87.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-cebula-72414",
+            "name": "cebula",
+            "weight": 40.0,
+            "kcal100": 32.5,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-ziemniaki-gotowane-2192",
+            "name": "ziemniaki gotowane",
+            "weight": 60.0,
+            "kcal100": 78.3,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jajo-w-kosteczke-53717",
+            "name": "jajo w kosteczkę",
+            "weight": 50.0,
+            "kcal100": 152.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-oliwa-37209",
+            "name": "oliwa",
+            "weight": 9.0,
+            "kcal100": 900.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "import-plan-sobota-i-dzien",
+    "name": "Sobota – I dzień",
+    "meals": [
+      {
+        "meal": "breakfast1",
+        "recipeId": "import-sobota-i-dzien-sniadanie-i",
+        "portionWeight": 420.0,
+        "customIngredients": [
+          {
+            "id": "ing-sok-owocowy-swiezy-8605",
+            "name": "sok owocowy świeży",
+            "weight": 200.0,
+            "kcal100": 44.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-chleb-razowy-5491",
+            "name": "chleb razowy",
+            "weight": 70.0,
+            "kcal100": 228.6,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-maslo-44040",
+            "name": "masło",
+            "weight": 10.0,
+            "kcal100": 0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-poledwica-19783",
+            "name": "polędwica",
+            "weight": 40.0,
+            "kcal100": 165.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-warzywa-na-kanapke-27634",
+            "name": "warzywa na kanapkę",
+            "weight": 100.0,
+            "kcal100": 14.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "breakfast2",
+        "recipeId": "import-kanapka",
+        "portionWeight": 79.0,
+        "customIngredients": [
+          {
+            "id": "ing-grahamka-26376",
+            "name": "grahamka",
+            "weight": 50.0,
+            "kcal100": 260.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-ser-zolty-hit-36727",
+            "name": "ser żółty HIT",
+            "weight": 20.0,
+            "kcal100": 300.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-koncentrat-pomidorowy-74440",
+            "name": "koncentrat pomidorowy",
+            "weight": 9.0,
+            "kcal100": 100.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "lunch",
+        "recipeId": "import-sobota-i-dzien-lunch",
+        "portionWeight": 400.0,
+        "customIngredients": [
+          {
+            "id": "ing-ryba-93696",
+            "name": "ryba",
+            "weight": 200.0,
+            "kcal100": 160.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-warzywa-82448",
+            "name": "warzywa",
+            "weight": 200.0,
+            "kcal100": 60.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "import-plan-niedziela-vii-dzien",
+    "name": "Niedziela – VII dzień",
+    "meals": [
+      {
+        "meal": "breakfast1",
+        "recipeId": "import-niedziela-vii-dzien-sniadanie-i",
+        "portionWeight": 590.0,
+        "customIngredients": [
+          {
+            "id": "ing-sok-owocowy-swiezy-8605",
+            "name": "sok owocowy świeży",
+            "weight": 200.0,
+            "kcal100": 44.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-musli-naturalne-25107",
+            "name": "musli naturalne",
+            "weight": 80.0,
+            "kcal100": 366.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-banan-39240",
+            "name": "banan",
+            "weight": 60.0,
+            "kcal100": 96.7,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-42575",
+            "name": "jogurt naturalny",
+            "weight": 250.0,
+            "kcal100": 61.2,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "breakfast2",
+        "recipeId": "import-niedziela-vii-dzien-sniadanie-ii",
+        "portionWeight": 110.0,
+        "customIngredients": [
+          {
+            "id": "ing-herbata-zielona-5049",
+            "name": "herbata zielona",
+            "weight": 0,
+            "kcal100": 0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-grahamka-26376",
+            "name": "grahamka",
+            "weight": 50.0,
+            "kcal100": 260.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jajo-99543",
+            "name": "jajo",
+            "weight": 50.0,
+            "kcal100": 152.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-szczypiorek-salata-74943",
+            "name": "szczypiorek, sałata",
+            "weight": 10.0,
+            "kcal100": 10.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "lunch",
+        "recipeId": "import-niedziela-vii-dzien-obiad",
+        "portionWeight": 538.0,
+        "customIngredients": [
+          {
+            "id": "ing-np-mintaj-30683",
+            "name": "np. mintaj",
+            "weight": 200.0,
+            "kcal100": 80.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-warzywa-mieszane-55857",
+            "name": "warzywa mieszane",
+            "weight": 200.0,
+            "kcal100": 37.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-olej-74705",
+            "name": "olej",
+            "weight": 18.0,
+            "kcal100": 877.8,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-ziemniaki-gotowane-82929",
+            "name": "ziemniaki gotowane",
+            "weight": 120.0,
+            "kcal100": 78.3,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      },
+      {
+        "meal": "dinner",
+        "recipeId": "import-salatka-owocowa",
+        "portionWeight": 288.0,
+        "customIngredients": [
+          {
+            "id": "ing-kiwi-73552",
+            "name": "kiwi",
+            "weight": 80.0,
+            "kcal100": 40.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-jogurt-naturalny-49677",
+            "name": "jogurt naturalny",
+            "weight": 48.0,
+            "kcal100": 61.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-banan-47921",
+            "name": "banan",
+            "weight": 60.0,
+            "kcal100": 97.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          },
+          {
+            "id": "ing-pomarancza-98082",
+            "name": "pomarańcza",
+            "weight": 100.0,
+            "kcal100": 47.0,
+            "protein100": 0,
+            "fat100": 0,
+            "carbs100": 0
+          }
+        ]
+      }
+    ]
+  }
+]

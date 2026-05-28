@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2e7d32">
+<title>Twój jadłospis — offline</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif;background:#f7faf5;color:#172417;padding:24px}
+main{max-width:420px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:24px;padding:24px;box-shadow:0 12px 30px rgba(0,0,0,.08)}
+h1{margin:0 0 8px;font-size:24px}p{line-height:1.5;color:#536253}button{border:0;border-radius:14px;background:#2e7d32;color:#fff;font-weight:800;padding:12px 16px}
+@media (prefers-color-scheme:dark){body{background:#121712;color:#eef5ed}main{background:#1b221c;border-color:rgba(255,255,255,.12)}p{color:#aebbad}}
+</style>
+</head>
+<body><main><h1>Jesteś offline</h1><p>Aplikacja działa offline po pierwszym pełnym uruchomieniu online. Ta strona pojawia się, gdy żądany plik nie został jeszcze zapisany w cache.</p><button onclick="location.reload()">Spróbuj ponownie</button></main></body>
+</html>

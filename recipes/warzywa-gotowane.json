@@ -1,0 +1,20 @@
+{
+  "id": "import-warzywa-gotowane",
+  "title": "warzywa gotowane",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-warzywa-82448",
+      "name": "warzywa",
+      "weight": 200.0,
+      "kcal100": 60.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "import-warzywa-z-patelni",
+  "title": "warzywa z patelni",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-olej-20223",
+      "name": "olej",
+      "weight": 18.0,
+      "kcal100": 844.4,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-jajo-99543",
+      "name": "jajo",
+      "weight": 50.0,
+      "kcal100": 152.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-warzywa-mrozone-2684",
+      "name": "warzywa mrożone",
+      "weight": 300.0,
+      "kcal100": 37.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}

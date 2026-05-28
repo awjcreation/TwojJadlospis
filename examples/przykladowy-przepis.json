@@ -1,0 +1,33 @@
+{
+  "title": "Kanapki z twarożkiem",
+  "category": "Śniadania",
+  "recipeType": "single",
+  "prep": "Wymieszaj twarożek z jogurtem i szczypiorkiem. Podaj z pieczywem.",
+  "image": "",
+  "ingredients": [
+    {
+      "name": "chleb żytni",
+      "weight": 90,
+      "kcal100": 259,
+      "protein100": 8.5,
+      "fat100": 3.3,
+      "carbs100": 48
+    },
+    {
+      "name": "twaróg półtłusty",
+      "weight": 120,
+      "kcal100": 133,
+      "protein100": 18.7,
+      "fat100": 4.7,
+      "carbs100": 3.7
+    },
+    {
+      "name": "jogurt naturalny",
+      "weight": 30,
+      "kcal100": 61,
+      "protein100": 3.5,
+      "fat100": 3.3,
+      "carbs100": 4.7
+    }
+  ]
+}

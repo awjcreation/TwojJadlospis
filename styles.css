@@ -1,0 +1,3873 @@
+/*
+  Twój jadłospis v1.0.0 — style aplikacji PWA.
+  Style bazowe, responsywne układy portrait/landscape
+  oraz jasny, ciemny i automatyczny motyw systemowy.
+*/
+
+/* ==========================================================
+   Twój jadłospis — pełne PWA
+   Mobile first, bez bibliotek zewnętrznych.
+   ========================================================== */
+
+:root {
+  --bg: #f7f4ef;
+  --surface: #ffffff;
+  --surface-soft: #fbfaf7;
+  --text: #111827;
+  --muted: #6b7280;
+  --muted-2: #9ca3af;
+  --line: #e8e2d8;
+  --green: #237a32;
+  --green-2: #166534;
+  --green-soft: #e7f5df;
+  --orange: #d56a00;
+  --orange-soft: #fff0dd;
+  --red: #dc2626;
+  --purple: #7c3aed;
+  --blue: #0369a1;
+  --yellow: #ca8a04;
+  --shadow: 0 10px 28px rgba(17, 24, 39, 0.08);
+  --shadow-soft: 0 6px 18px rgba(17, 24, 39, 0.06);
+  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --page-max: 740px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding-bottom: 92px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.app-shell {
+  width: 100%;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 22px 16px 28px;
+}
+
+.screen {
+  animation: fadeIn 0.16s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- nagłówki ---------- */
+
+.app-header,
+.sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+
+.app-title {
+  margin: 0;
+  font-size: clamp(30px, 9vw, 46px);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.sub-title {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  display: inline-grid;
+  place-items: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.icon-btn.primary {
+  color: #fff;
+  background: var(--green);
+}
+
+.icon-btn.danger {
+  color: var(--red);
+}
+
+.back-btn {
+  width: 42px;
+  height: 42px;
+}
+
+/* ---------- ogólne komponenty ---------- */
+
+.card {
+  background: var(--surface);
+  border: 1px solid rgba(232, 226, 216, 0.88);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
+.card-pad {
+  padding: 18px;
+}
+
+.section-title {
+  margin: 26px 0 12px;
+  font-size: 21px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 13px;
+}
+
+.empty-state {
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.primary-btn,
+.secondary-btn,
+.danger-btn {
+  width: 100%;
+  min-height: 50px;
+  border: 0;
+  border-radius: 16px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.primary-btn {
+  color: #fff;
+  background: var(--green);
+  box-shadow: 0 8px 18px rgba(35, 122, 50, 0.22);
+}
+
+.secondary-btn {
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.danger-btn {
+  color: #fff;
+  background: var(--red);
+}
+
+.link-btn {
+  border: 0;
+  background: transparent;
+  color: var(--green);
+  font-weight: 800;
+  padding: 8px 0;
+}
+
+.inline-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.inline-actions > * {
+  flex: 1;
+}
+
+/* ---------- formularze ---------- */
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-group {
+  display: grid;
+  gap: 7px;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.form-control,
+.form-select,
+.form-textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 12px 13px;
+  outline: none;
+}
+
+.form-textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.form-row {
+  display: grid;
+  gap: 10px;
+}
+
+@media (min-width: 620px) {
+  .form-row.two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.check-row,
+.setting-row,
+.list-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  min-height: 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.check-row:last-child,
+.setting-row:last-child,
+.list-row:last-child {
+  border-bottom: 0;
+}
+
+/* ---------- start: jadłospis dnia ---------- */
+
+.day-switch {
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.day-label {
+  text-align: center;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.plan-card {
+  padding: 18px;
+}
+
+.plan-header {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+  gap: 12px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+}
+
+.plan-name {
+  margin: 0 0 12px;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.nutrition-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.nutrition-item {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+  align-content: center;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.nutrition-item strong {
+  font-size: 15px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.nutrition-item.calories {
+  background: var(--green-soft);
+  border-radius: 14px;
+  padding: 8px 10px;
+}
+
+.nutrition-item.calories strong {
+  color: var(--green);
+}
+
+.meal-list {
+  display: grid;
+  gap: 12px;
+}
+
+.meal-card {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  background: var(--surface-soft);
+  border: 1px solid rgba(232, 226, 216, 0.68);
+  border-radius: var(--radius-lg);
+  padding: 10px;
+}
+
+.meal-thumb {
+  width: 78px;
+  height: 78px;
+  border-radius: 18px;
+  object-fit: cover;
+  background: #e8efe3;
+}
+
+.meal-title {
+  margin: 0 0 4px;
+  font-size: 19px;
+  line-height: 1.1;
+}
+
+.meal-name {
+  margin: 0 0 5px;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.meal-time {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.meal-kcal {
+  justify-self: end;
+  color: var(--green);
+  background: var(--green-soft);
+  border-radius: 12px;
+  padding: 7px 10px;
+  font-weight: 800;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.add-day-card {
+  padding: 22px;
+  display: grid;
+  gap: 12px;
+  text-align: center;
+}
+
+/* ---------- listy ---------- */
+
+.search-input {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.search-input input {
+  padding-left: 38px;
+}
+
+.search-input::before {
+  content: "⌕";
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-52%);
+  color: var(--muted);
+  z-index: 1;
+}
+
+.sort-bar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.sort-pill,
+.filter-pill {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.sort-pill.active,
+.filter-pill.active {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-soft);
+  font-weight: 800;
+}
+
+.list-card {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) 38px;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.list-card-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  object-fit: cover;
+  background: #e8efe3;
+}
+
+.list-card-title {
+  margin: 0 0 5px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.list-card-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.kcal-chip {
+  color: var(--green);
+  background: var(--green-soft);
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.overflow-btn {
+  border: 0;
+  background: transparent;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  font-size: 22px;
+}
+
+/* ---------- składniki ---------- */
+
+.ingredients-list {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.ingredient-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto 32px;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.ingredient-row:last-child {
+  border-bottom: 0;
+}
+
+.ingredient-name {
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  color: var(--text);
+}
+
+.ingredient-weight {
+  justify-self: end;
+  color: var(--text);
+}
+
+.remove-btn {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--red);
+  font-size: 18px;
+}
+
+/* ---------- zakupy / produkty / więcej ---------- */
+
+.product-icon {
+  width: 26px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.more-list {
+  overflow: hidden;
+}
+
+.more-section-label {
+  margin: 22px 4px 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.more-row {
+  display: grid;
+  grid-template-columns: 32px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.more-row:last-child {
+  border-bottom: 0;
+}
+
+.more-row button {
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  font-weight: 700;
+}
+
+/* ---------- modal ---------- */
+
+.modal-backdrop {
+  position: fixed;
+  z-index: 40;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.36);
+  display: grid;
+  place-items: end center;
+  padding: 16px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 560px;
+  max-height: min(86vh, 760px);
+  overflow: auto;
+  background: var(--surface);
+  border-radius: 26px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* ---------- dolna nawigacja ---------- */
+
+.bottom-nav {
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid var(--line);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.bottom-nav-inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  padding: 8px 8px calc(8px + env(safe-area-inset-bottom));
+}
+
+.nav-item {
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.nav-icon {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.nav-item.active {
+  color: var(--green);
+  background: transparent;
+  font-weight: 800;
+}
+
+/* ---------- responsywność ---------- */
+
+@media (max-width: 430px) {
+  .app-shell {
+    padding-inline: 12px;
+  }
+
+  .nutrition-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .meal-card {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+
+  .meal-thumb {
+    width: 64px;
+    height: 64px;
+  }
+
+  .meal-kcal {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .list-card {
+    grid-template-columns: 62px minmax(0, 1fr) 34px;
+  }
+
+  .list-card-thumb {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+@media (min-width: 760px) {
+  .app-shell {
+    padding-top: 34px;
+  }
+
+  .plan-card,
+  .card-pad {
+    padding: 24px;
+  }
+}
+
+
+/* Aktualizacja dolnego paska: trzy pozycje, środkowy kafelek jako główna akcja. */
+.bottom-nav-inner.nav-three {
+  grid-template-columns: 1fr 1.18fr 1fr;
+  align-items: end;
+  gap: 8px;
+}
+
+.nav-item.nav-main {
+  min-height: 66px;
+  margin-top: -18px;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 22px;
+  box-shadow: none;
+}
+
+.nav-item.nav-main.active {
+  color: #ffffff;
+  background: transparent;
+}
+
+.nav-item.nav-main .nav-icon {
+  font-size: 24px;
+}
+
+.more-list .more-row:first-child {
+  border-top-left-radius: var(--radius-xl);
+  border-top-right-radius: var(--radius-xl);
+}
+
+.more-list .more-row:last-child {
+  border-bottom-left-radius: var(--radius-xl);
+  border-bottom-right-radius: var(--radius-xl);
+}
+
+
+/* Większy, czytelniejszy wybór daty w modalu kalendarza. */
+.date-picker-large {
+  min-height: 56px;
+  font-size: 18px;
+  font-weight: 700;
+  color-scheme: light;
+}
+
+
+/* v1.3 — środkowy przycisk dolnej nawigacji: talerz w kole, bez zielonego tła. */
+.nav-item.nav-main,
+.nav-item.nav-main.active {
+  min-height: auto;
+  margin-top: -20px;
+  color: var(--green);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.nav-plate {
+  width: 74px;
+  height: 74px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  box-shadow: none;
+  margin-bottom: 2px;
+}
+
+.nav-plate img {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+/* v1.3 — własny picker kalendarza. */
+.calendar-picker {
+  display: grid;
+  gap: 18px;
+}
+
+.calendar-month-row {
+  display: grid;
+  grid-template-columns: 46px 1fr 46px;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.calendar-weekdays,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  text-align: center;
+}
+
+.calendar-weekdays {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  min-width: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.calendar-day.outside {
+  color: var(--muted-2);
+  font-weight: 600;
+}
+
+.calendar-day.sunday:not(.selected) {
+  color: var(--red);
+}
+
+.calendar-day.today:not(.selected) {
+  outline: 2px solid var(--green);
+  outline-offset: -2px;
+}
+
+.calendar-day.selected {
+  background: var(--green);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(35, 122, 50, 0.24);
+}
+
+.today-btn {
+  width: min(220px, 100%);
+  justify-self: center;
+  border: 2px solid var(--green);
+  background: var(--surface);
+  color: var(--green);
+}
+
+.modal .modal-header::before {
+  content: "📅";
+  color: var(--green);
+  font-size: 24px;
+}
+
+@media (max-width: 430px) {
+  .nav-plate {
+    width: 66px;
+    height: 66px;
+  }
+
+  .nav-plate img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .calendar-day {
+    font-size: 15px;
+  }
+}
+
+
+/* v1.4 refined visual icons */
+.calendar-mini-icon{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+}
+
+.icon-btn img.calendar-mini-icon{
+  width:24px;
+  height:24px;
+}
+
+.nav-plate{
+  width:72px;
+  height:72px;
+  border: 0;
+  background: transparent;
+}
+
+.nav-plate img{
+  width:60px;
+  height:60px;
+}
+
+.nav-item.nav-main{
+  transform:translateY(-6px);
+}
+
+.today-btn{
+  gap:10px;
+  font-weight:800;
+}
+
+.modal .modal-header::before{
+  content:"";
+  width:24px;
+  height:24px;
+  background:url('./assets/calendar-clean.png') center/contain no-repeat;
+  display:block;
+}
+
+.calendar-day.selected{
+  background:#15803d;
+}
+
+
+/* v1.5 — korekta ekranu startowego wg referencji */
+body {
+  background: #faf8f4;
+}
+
+.app-shell {
+  padding-top: 26px;
+}
+
+.home-header {
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.home-header .app-title {
+  font-size: clamp(34px, 8vw, 42px);
+  letter-spacing: -0.045em;
+}
+
+.compact-icon-btn {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(232, 226, 216, 0.9);
+  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.045);
+}
+
+.icon-btn {
+  box-shadow: 0 4px 14px rgba(17, 24, 39, 0.055);
+}
+
+.calendar-mini-icon,
+.icon-btn img.calendar-mini-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Data: etykieta względna + pełna data pod spodem */
+.day-switch {
+  grid-template-columns: 44px 1fr 44px;
+  margin-bottom: 26px;
+}
+
+.day-switch .icon-btn {
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+}
+
+.day-label {
+  display: grid;
+  gap: 4px;
+  text-align: left;
+  justify-self: start;
+  padding-left: 4px;
+}
+
+.day-label strong {
+  color: var(--green);
+  font-size: 22px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.day-label span {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Karta braku jadłospisu: kompaktowa i subtelna */
+.add-day-card.empty-plan-card {
+  width: 100%;
+  min-height: 0;
+  padding: 28px 22px;
+  border-radius: 22px;
+  border-color: rgba(232, 226, 216, 0.72);
+  box-shadow: 0 8px 22px rgba(17, 24, 39, 0.045);
+  background: rgba(255, 255, 255, 0.94);
+  text-align: center;
+  gap: 14px;
+}
+
+.empty-plan-icon {
+  width: 104px;
+  height: 104px;
+  border-radius: 999px;
+  margin: 0 auto 8px;
+  display: grid;
+  place-items: center;
+  background: #eaf5e6;
+}
+
+.empty-plan-icon img {
+  width: 54px;
+  height: 54px;
+}
+
+.empty-plan-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.empty-plan-text {
+  max-width: 270px;
+  margin: 0 auto 10px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.compact-primary-btn {
+  width: min(280px, 100%);
+  min-height: 54px;
+  margin: 0 auto;
+  border-radius: 12px;
+  font-size: 17px;
+  box-shadow: 0 8px 18px rgba(35, 122, 50, 0.18);
+}
+
+/* Dolna nawigacja: płaska, minimalistyczna */
+.bottom-nav {
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: none;
+}
+
+.bottom-nav-inner.nav-three {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2px;
+  padding-top: 10px;
+}
+
+.nav-item {
+  background: transparent;
+  box-shadow: none;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav-item.active {
+  color: var(--green);
+  font-weight: 800;
+}
+
+.nav-item.nav-main,
+.nav-item.nav-main.active {
+  margin-top: 0;
+  transform: none;
+  color: var(--green);
+}
+
+.nav-plate {
+  width: 58px;
+  height: 58px;
+  border: 0;
+  box-shadow: none;
+  margin-bottom: 3px;
+  background: transparent;
+}
+
+.nav-plate img {
+  width: 48px;
+  height: 48px;
+}
+
+.nav-icon {
+  font-size: 20px;
+}
+
+/* Subtelniejsze obramowania i proporcje iOS-like */
+.card,
+.plan-card,
+.modal,
+.form-control,
+.form-select,
+.form-textarea {
+  border-color: rgba(232, 226, 216, 0.72);
+}
+
+@media (max-width: 430px) {
+  .app-shell {
+    padding-inline: 24px;
+  }
+
+  .home-header .app-title {
+    font-size: 37px;
+  }
+
+  .day-switch {
+    grid-template-columns: 42px 1fr 42px;
+  }
+
+  .day-switch .icon-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .empty-plan-icon {
+    width: 96px;
+    height: 96px;
+  }
+
+  .empty-plan-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .add-day-card.empty-plan-card {
+    padding: 26px 18px;
+  }
+
+  .nav-plate {
+    width: 56px;
+    height: 56px;
+  }
+
+  .nav-plate img {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+
+/* v1.6 — uproszczone makro i brak placeholderów zdjęć */
+.plan-summary,
+.day-summary,
+.macro-summary,
+.plan-macros {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.plan-summary .summary-item,
+.day-summary .summary-item,
+.macro-summary .summary-item,
+.plan-macros .summary-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.plan-summary .summary-item span.label,
+.day-summary .summary-item span.label,
+.macro-summary .summary-item span.label,
+.plan-macros .summary-item span.label {
+  display: none !important;
+}
+
+.plan-summary .summary-item .icon,
+.day-summary .summary-item .icon,
+.macro-summary .summary-item .icon,
+.plan-macros .summary-item .icon {
+  font-size: 14px;
+}
+
+.plan-summary .summary-item .value,
+.day-summary .summary-item .value,
+.macro-summary .summary-item .value,
+.plan-macros .summary-item .value {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.meal-card img,
+.meal-card figure,
+.meal-image,
+.meal-thumb,
+.recipe-thumb.placeholder,
+.recipe-placeholder {
+  display: none !important;
+}
+
+@media (max-width: 430px) {
+  .plan-summary,
+  .day-summary,
+  .macro-summary,
+  .plan-macros {
+    gap: 8px;
+  }
+
+  .plan-summary .summary-item,
+  .day-summary .summary-item,
+  .macro-summary .summary-item,
+  .plan-macros .summary-item {
+    font-size: 12px;
+  }
+
+  .plan-summary .summary-item .value,
+  .day-summary .summary-item .value,
+  .macro-summary .summary-item .value,
+  .plan-macros .summary-item .value {
+    font-size: 12px;
+  }
+}
+
+
+/* v1.7 — makro tylko ikony + wartości, bez zielonego tła kalorii */
+.nutrition-strip.compact-nutrition {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: nowrap !important;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nutrition-strip.compact-nutrition .nutrition-item,
+.nutrition-strip.compact-nutrition .nutrition-item.calories {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.nutrition-strip.compact-nutrition .nutrition-item span:not(.macro-icon) {
+  display: none !important;
+}
+
+.nutrition-strip.compact-nutrition .macro-icon {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.nutrition-strip.compact-nutrition .nutrition-item strong,
+.nutrition-strip.compact-nutrition .nutrition-item.calories strong {
+  color: var(--text) !important;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (max-width: 430px) {
+  .nutrition-strip.compact-nutrition {
+    gap: 8px;
+  }
+
+  .nutrition-strip.compact-nutrition .nutrition-item strong,
+  .nutrition-strip.compact-nutrition .nutrition-item.calories strong {
+    font-size: 12px;
+  }
+
+  .nutrition-strip.compact-nutrition .macro-icon {
+    font-size: 13px;
+  }
+}
+
+
+/* v1.8 — tytuł dania po lewej, kcal po prawej */
+.meal-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.meal-card > div {
+  min-width: 0;
+}
+
+.meal-title,
+.meal-name {
+  text-align: left;
+}
+
+.meal-kcal {
+  justify-self: end;
+  align-self: start;
+  text-align: right;
+  white-space: nowrap;
+  margin-top: 2px;
+  background: transparent !important;
+  padding: 0 !important;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 800;
+  box-shadow: none !important;
+}
+
+@media (max-width: 430px) {
+  .meal-card {
+    gap: 10px;
+  }
+
+  .meal-kcal {
+    font-size: 13px;
+  }
+}
+
+
+/* v1.9 — godzina bezpośrednio pod nazwą posiłku */
+.meal-title {
+  margin-bottom: 3px;
+}
+
+.meal-time {
+  display: block;
+  margin: 0 0 7px;
+  font-size: 13px;
+  line-height: 1.15;
+  color: var(--muted);
+}
+
+.meal-name {
+  margin-top: 0;
+}
+
+
+/* v2.0 — menu jadłospisu dnia i separacja ustawień */
+.day-plan-menu {
+  justify-self: end;
+  align-self: start;
+  color: var(--muted);
+  font-size: 24px;
+}
+
+.more-utility-list {
+  margin-top: 18px;
+  border-color: rgba(35, 122, 50, 0.18);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.more-utility-list .more-row {
+  min-height: 58px;
+}
+
+.setting-row input[type="number"] {
+  text-align: right;
+}
+
+.meal-list + .primary-btn[data-action="add-meal"] {
+  display: none !important;
+}
+
+
+/* v2.1 — tryb wyboru przepisu z pełnego widoku */
+.recipe-pick-note {
+  margin: 0 0 12px;
+  border-color: rgba(35, 122, 50, 0.18);
+  background: rgba(231, 245, 223, 0.55);
+}
+
+
+/* v2.2 — jeden spójny styl ikon: Google Material Symbols Rounded */
+.material-symbols-rounded {
+  font-family: "Material Symbols Rounded";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.icon-btn .material-symbols-rounded,
+.compact-icon-btn .material-symbols-rounded {
+  color: var(--green);
+  font-size: 23px;
+}
+
+.nav-icon.material-symbols-rounded {
+  font-size: 22px;
+  color: currentColor;
+}
+
+.nav-plate {
+  border-color: transparent;
+}
+
+.nav-plate .material-symbols-rounded {
+  color: var(--green);
+  font-size: 34px;
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 40;
+}
+
+.macro-icon.material-symbols-rounded {
+  font-size: 14px;
+  color: var(--green);
+}
+
+.more-icon.material-symbols-rounded,
+.product-icon.material-symbols-rounded {
+  color: var(--green);
+  font-size: 22px;
+}
+
+.empty-plan-icon .material-symbols-rounded {
+  color: var(--green);
+  font-size: 52px;
+}
+
+.overflow-btn .material-symbols-rounded,
+.remove-btn .material-symbols-rounded {
+  color: currentColor;
+  font-size: 22px;
+}
+
+.today-btn .material-symbols-rounded {
+  font-size: 20px;
+}
+
+.modal .modal-header::before {
+  content: "calendar_month";
+  font-family: "Material Symbols Rounded";
+  color: var(--green);
+  font-size: 24px;
+  background: none;
+  width: auto;
+  height: auto;
+}
+
+.calendar-mini-icon {
+  display: none !important;
+}
+
+
+/* v2.3 — uproszczony wygląd kalorii posiłku */
+.meal-kcal,
+.nutrition-item.calories {
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding-inline: 0 !important;
+}
+
+/* Dolne akcje formularzy */
+.form-actions-bottom {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(232, 226, 216, 0.7);
+}
+
+.form-actions-bottom .primary-btn,
+.form-actions-bottom .secondary-btn {
+  flex: 1;
+  min-height: 54px;
+}
+
+.form-actions-bottom .secondary-btn {
+  background: #fff;
+}
+
+
+/* v2.4 — import przepisu z pliku JSON */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.header-actions .icon-btn .material-symbols-rounded {
+  font-size: 22px;
+}
+
+
+/* v2.7 — podgląd jadłospisu przed przypisaniem */
+.assign-note {
+  margin: 0 0 12px;
+  border-color: rgba(35, 122, 50, 0.18);
+  background: rgba(231, 245, 223, 0.55);
+}
+
+.assign-preview {
+  display: grid;
+  gap: 14px;
+}
+
+.assign-preview .plan-card {
+  box-shadow: none;
+  border-radius: 22px;
+}
+
+.assign-preview .form-actions-bottom {
+  margin-top: 4px;
+}
+
+
+/* v2.8 — nagłówek startowy, data jako przycisk i biblioteka */
+.home-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 44px;
+  align-items: start;
+  gap: 10px;
+}
+
+.home-title-row {
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.home-title-row .app-title {
+  min-width: 0;
+}
+
+.home-link-btn {
+  border: 1px solid rgba(35, 122, 50, 0.18);
+  background: rgba(231, 245, 223, 0.72);
+  color: var(--green);
+  border-radius: 999px;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.1;
+  white-space: normal;
+  max-width: 120px;
+  text-align: left;
+}
+
+.day-label {
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 4px 8px;
+  margin-left: -8px;
+}
+
+.day-label:active {
+  background: rgba(35, 122, 50, 0.08);
+}
+
+.library-list {
+  margin-top: 8px;
+}
+
+.assign-preview [data-plan-menu] {
+  color: var(--muted);
+}
+
+@media (max-width: 430px) {
+  .home-title-row {
+    gap: 8px;
+  }
+
+  .home-link-btn {
+    max-width: 112px;
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+}
+
+
+/* v2.9 — poprawiony faktyczny nagłówek ekranu głównego */
+.home-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 44px;
+  align-items: start;
+  gap: 10px;
+}
+
+.home-title-row {
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.home-link-btn {
+  border: 1px solid rgba(35, 122, 50, 0.18);
+  background: rgba(231, 245, 223, 0.72);
+  color: var(--green);
+  border-radius: 999px;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 126px;
+  text-align: left;
+}
+
+@media (max-width: 430px) {
+  .home-link-btn {
+    max-width: 112px;
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+}
+
+
+/* v3.0 — prawy przycisk dolnej nawigacji prowadzi do „Przepisy i jadłospisy” */
+.bottom-nav .nav-item span:last-child {
+  line-height: 1.12;
+}
+
+.home-title-row {
+  display: block;
+}
+
+.home-link-btn {
+  display: none !important;
+}
+
+
+/* v3.1 — wyśrodkowany dzień i makro pod kaloriami */
+.day-switch {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  align-items: center;
+}
+
+.day-label {
+  text-align: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.day-label strong,
+.day-label span {
+  width: 100%;
+  text-align: center;
+}
+
+.meal-card {
+  align-items: start;
+}
+
+.meal-macros-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  min-width: 72px;
+  margin-top: 2px;
+}
+
+.meal-macro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 11px;
+  line-height: 1;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.meal-macro.kcal {
+  margin-bottom: 2px;
+  color: var(--text);
+}
+
+.meal-macro.kcal strong {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--green);
+}
+
+.meal-macro .material-symbols-rounded {
+  font-size: 13px;
+  color: var(--green);
+}
+
+.meal-macro span:last-child {
+  font-weight: 700;
+}
+
+@media (max-width: 430px) {
+  .meal-macros-column {
+    min-width: 66px;
+    gap: 5px;
+  }
+
+  .meal-macro {
+    font-size: 10px;
+  }
+
+  .meal-macro.kcal strong {
+    font-size: 14px;
+  }
+}
+
+
+/* v3.2 — produkty: liczba przepisów, powiązane przepisy i sortowanie A-Z/Z-A */
+.product-row {
+  cursor: pointer;
+}
+
+.product-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.product-left strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-count {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.product-recipes-list {
+  display: grid;
+  gap: 8px;
+}
+
+.product-recipe-item {
+  width: 100%;
+  border: 1px solid rgba(232, 226, 216, 0.82);
+  background: var(--surface-soft);
+  border-radius: 16px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  text-align: left;
+}
+
+.product-recipe-item strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.product-recipe-item small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.product-recipe-meta {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+
+/* v3.3 — etykieta sortowania produktów */
+.sort-right {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sort-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  margin-right: 2px;
+}
+
+
+/* v3.4 — bardziej kompaktowe wartości odżywcze */
+.nutrition-strip.compact-nutrition,
+.nutrition-strip {
+  gap: 6px !important;
+}
+
+.nutrition-strip.compact-nutrition .nutrition-item,
+.nutrition-strip .nutrition-item {
+  gap: 2px !important;
+  font-size: 11px !important;
+  padding: 0 !important;
+  min-width: auto !important;
+}
+
+.nutrition-strip.compact-nutrition .nutrition-item strong,
+.nutrition-strip .nutrition-item strong {
+  font-size: 11px !important;
+  letter-spacing: -0.02em;
+}
+
+.nutrition-strip.compact-nutrition .macro-icon,
+.nutrition-strip .macro-icon,
+.nutrition-strip .material-symbols-rounded {
+  font-size: 12px !important;
+}
+
+.plan-header .nutrition-strip {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow: hidden;
+  white-space: nowrap;
+  justify-content: flex-start;
+}
+
+.meal-macros-column {
+  min-width: 58px;
+  gap: 4px;
+}
+
+.meal-macro {
+  font-size: 10px;
+  gap: 2px;
+}
+
+.meal-macro .material-symbols-rounded {
+  font-size: 11px;
+}
+
+.meal-macro.kcal strong {
+  font-size: 13px;
+}
+
+@media (max-width: 430px) {
+  .nutrition-strip.compact-nutrition,
+  .nutrition-strip {
+    gap: 5px !important;
+  }
+
+  .nutrition-strip.compact-nutrition .nutrition-item strong,
+  .nutrition-strip .nutrition-item strong {
+    font-size: 10px !important;
+  }
+
+  .nutrition-strip.compact-nutrition .macro-icon,
+  .nutrition-strip .macro-icon,
+  .nutrition-strip .material-symbols-rounded {
+    font-size: 11px !important;
+  }
+
+  .meal-macros-column {
+    min-width: 52px;
+  }
+}
+
+
+/* v3.5 — etykieta typu pozycji pod nazwą w liście powiązań produktu */
+.product-recipe-item small {
+  text-transform: lowercase;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+
+/* v3.6.1 — normalny widok przepisu */
+.recipe-view-card {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.recipe-view-title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.recipe-view-subtitle {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.recipe-view-nutrition {
+  border-top: 1px solid rgba(232, 226, 216, 0.65);
+  border-bottom: 1px solid rgba(232, 226, 216, 0.65);
+  padding: 12px 0;
+}
+
+.recipe-view-section {
+  display: grid;
+  gap: 12px;
+}
+
+.recipe-view-section h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.recipe-ingredient-list {
+  display: grid;
+  gap: 8px;
+}
+
+.recipe-ingredient-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(232, 226, 216, 0.58);
+}
+
+.recipe-ingredient-row strong {
+  font-size: 13px;
+}
+
+.recipe-prep {
+  margin: 0;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+
+/* v3.6.2 — podgląd jadłospisu bez daty, zawartość wyżej */
+.assign-preview {
+  gap: 8px;
+}
+
+.assign-preview .plan-card {
+  margin-top: 0;
+}
+
+.modal:has(.assign-preview) {
+  padding-top: 14px;
+}
+
+.modal:has(.assign-preview) .modal-header {
+  margin-bottom: 8px;
+}
+
+
+/* v3.7 — automatyczna lista zakupów z jadłospisów */
+.shopping-settings-card {
+  margin-bottom: 18px;
+}
+
+.shopping-range {
+  margin: 12px 0 0;
+}
+
+.shopping-generated-list {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.shopping-generated-row {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  padding: 12px 0;
+}
+
+.shopping-product-name {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shopping-product-name strong {
+  display: block;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shopping-product-name small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.shopping-amount {
+  color: var(--green);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+
+/* v3.8 — menu eksportu listy zakupów */
+.modal .secondary-btn,
+.modal .primary-btn {
+  text-align: center;
+}
+
+
+/* v3.9 — zakres dat dla listy zakupów */
+.shopping-date-range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.shopping-date-btn {
+  border: 1px solid rgba(232, 226, 216, 0.82);
+  background: var(--surface-soft);
+  border-radius: 16px;
+  padding: 12px;
+  display: grid;
+  gap: 5px;
+  text-align: left;
+}
+
+.shopping-date-btn span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.shopping-date-btn strong {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.shopping-calendar-day.in-range:not(.range-start):not(.range-end) {
+  background: rgba(35, 122, 50, 0.12);
+  color: var(--green);
+}
+
+.shopping-calendar-day.range-start,
+.shopping-calendar-day.range-end {
+  background: var(--green);
+  color: #fff;
+}
+
+.shopping-calendar-day.range-start.range-end {
+  border-radius: 999px;
+}
+
+
+/* v4.0 — zewnętrzna bazowa lista produktów z informacją o źródle */
+.product-info {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.product-info small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.product-count.base-only {
+  color: var(--green);
+  background: rgba(35, 122, 50, 0.08);
+  border-radius: 999px;
+  padding: 4px 8px;
+}
+
+.product-detail {
+  display: grid;
+  gap: 14px;
+}
+
+.product-detail-macros {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.product-detail-macros span {
+  background: var(--surface-soft);
+  border: 1px solid rgba(232, 226, 216, 0.8);
+  border-radius: 12px;
+  padding: 8px 6px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.product-detail-macros strong {
+  color: var(--green);
+}
+
+.product-detail-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+/* v4.1 — uproszczony widok listy produktów i źródło pod nagłówkiem */
+.product-source-note {
+  margin: -6px 0 14px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.product-info small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.product-detail-macros,
+.user-nutrition-line .product-detail-macros {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.product-detail-macros span,
+.user-nutrition-line .product-detail-macros span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.product-detail-macros .material-symbols-rounded,
+.user-nutrition-line .material-symbols-rounded {
+  font-size: 14px;
+  color: var(--green);
+}
+
+.user-nutrition-line {
+  display: grid;
+  gap: 8px;
+  border-top: 1px solid rgba(232, 226, 216, 0.7);
+  padding-top: 12px;
+}
+
+.user-nutrition-label {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+/* v4.2 — ujednolicone wartości bazowe i użytkownika */
+.product-nutrition-compare {
+  display: grid;
+  gap: 10px;
+}
+
+.product-nutrition-compare h3 {
+  margin: 0 0 2px;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.product-nutrition-row {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(232, 226, 216, 0.82);
+  border-radius: 14px;
+  background: var(--surface-soft);
+}
+
+.product-nutrition-row.is-muted {
+  opacity: 0.55;
+}
+
+.product-nutrition-source {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: lowercase;
+}
+
+.product-nutrition-values {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.product-nutrition-values > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.product-nutrition-values .material-symbols-rounded {
+  color: var(--green);
+  font-size: 13px;
+}
+
+.product-source-detail {
+  margin: 0;
+  padding-left: 2px;
+}
+
+.product-detail-macros {
+  display: none;
+}
+
+.user-nutrition-line {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .product-nutrition-row {
+    grid-template-columns: 84px minmax(0, 1fr);
+    gap: 8px;
+    padding: 9px;
+  }
+
+  .product-nutrition-values {
+    gap: 4px;
+  }
+
+  .product-nutrition-values > span {
+    font-size: 10px;
+  }
+
+  .product-nutrition-values .material-symbols-rounded {
+    font-size: 12px;
+  }
+}
+
+
+/* v4.3 — ikony grup produktów */
+.product-icon {
+  font-size: 22px;
+  color: var(--green);
+  opacity: 0.92;
+}
+
+.product-row .product-left {
+  align-items: center;
+  gap: 12px;
+}
+
+
+/* v4.4 — wybór źródła wartości i produkty użytkownika */
+#baseProductsList {
+  display: none;
+}
+
+.product-nutrition-row.is-user {
+  border-color: rgba(35, 122, 50, 0.22);
+}
+
+
+/* v4.5 — edycja produktu */
+.product-edit-btn {
+  margin-top: 4px;
+  min-height: 44px;
+}
+
+#productEditForm .form-actions-bottom {
+  margin-top: 8px;
+}
+
+
+/* v4.5.1 — poprawki edycji przepisu i ikon produktów */
+.recipe-edit-actions {
+  margin-top: 24px;
+}
+
+.product-icon.material-symbols-rounded {
+  min-width: 24px;
+  width: 24px;
+  overflow: hidden;
+  font-size: 23px;
+}
+
+
+/* v4.6 — nowy zestaw ikon produktów */
+.product-icon.material-symbols-rounded {
+  font-size: 24px;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+  color: #2c7a43;
+  opacity: 0.95;
+}
+
+.product-row {
+  align-items: center;
+}
+
+.product-row .product-left {
+  gap: 13px;
+}
+
+.product-count.base-only {
+  background: rgba(44, 122, 67, 0.08);
+  color: #2c7a43;
+}
+
+
+/* v4.6.2 — naprawa ikon produktów i listy zakupów */
+.product-icon.material-symbols-rounded {
+  width: 24px;
+  min-width: 24px;
+  overflow: hidden;
+  font-size: 24px;
+  color: #2c7a43;
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+.shopping-date-range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.shopping-date-btn {
+  border: 1px solid rgba(232, 226, 216, 0.82);
+  background: var(--surface-soft);
+  border-radius: 16px;
+  padding: 12px;
+  display: grid;
+  gap: 5px;
+  text-align: left;
+}
+
+
+/* v4.6.4 — w podglądzie przypisywania posiłek otwiera przepis */
+.assign-preview [data-open-meal] {
+  cursor: pointer;
+}
+
+
+/* v4.7.0 — edycja ilości na liście zakupów */
+.shopping-amount-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  justify-self: end;
+  color: var(--green);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.shopping-weight-input {
+  width: 76px;
+  border: 1px solid rgba(232, 226, 216, 0.9);
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px 6px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--green);
+}
+
+.shopping-range {
+  display: none !important;
+}
+
+@media (max-width: 430px) {
+  .shopping-weight-input {
+    width: 64px;
+    font-size: 13px;
+  }
+
+  .shopping-generated-row {
+    gap: 8px;
+  }
+}
+
+
+/* v4.8.0 — finalny zestaw ikon produktów z pliku HTML */
+.product-icon.material-symbols-rounded {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  font-size: 28px;
+  line-height: 1;
+  color: #2f6f44;
+  opacity: 0.96;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.product-row .product-left {
+  gap: 14px;
+}
+
+
+/* v4.8.3 — przypisywanie jadłospisu z listy jadłospisów */
+.plan-assign-calendar .assign-calendar-note {
+  margin: 0 0 12px;
+}
+
+.overwrite-note {
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+
+/* v4.8.4 — potwierdzanie usuwania w menu */
+.modal .danger-btn {
+  min-height: 44px;
+}
+
+
+/* v4.8.5 — spójne nagłówki i kompaktowe sortowanie jadłospisów */
+.compact-sort-bar {
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.compact-sort-pill {
+  min-width: 56px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.compact-sort-pill .material-symbols-rounded {
+  font-size: 16px;
+}
+
+.header-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/* v4.8.6 — jednoznaczne tryby „Nowy” dla + i bezpieczne placeholdery zdjęć */
+.list-card-thumb,
+.meal-thumb {
+  object-fit: cover;
+  background: var(--surface-soft);
+}
+
+
+/* v4.8.7 — wspólne kompaktowe sortowanie list */
+.compact-sort-bar {
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.compact-sort-pill {
+  min-width: 56px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.compact-sort-pill .material-symbols-rounded {
+  font-size: 16px;
+}
+
+
+/* v4.8.9 — eksport zasobów */
+.sub-header [data-action="export-resources"] {
+  margin-left: auto;
+}
+
+
+/* v4.9.0 — edycja pojedynczych posiłków w jadłospisie */
+.editable-plan-meal {
+  cursor: pointer;
+}
+
+.meal-edit-side {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  justify-self: end;
+}
+
+.meal-kcal.readonly {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--muted);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+
+/* v4.9.7 — dolna nawigacja: tylko zielone ikony i tekst, bez ramek, tła i cieni */
+.bottom-nav .nav-item,
+.bottom-nav .nav-item.active,
+.bottom-nav .nav-main,
+.bottom-nav .nav-main.active,
+.bottom-nav .nav-plate,
+.bottom-nav .nav-main.active .nav-plate {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  border-color: transparent !important;
+  outline: 0 !important;
+}
+
+.bottom-nav .nav-item::before,
+.bottom-nav .nav-item::after,
+.bottom-nav .nav-plate::before,
+.bottom-nav .nav-plate::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.bottom-nav .nav-item,
+.bottom-nav .nav-item .material-symbols-rounded,
+.bottom-nav .nav-item .nav-icon,
+.bottom-nav .nav-main .nav-plate .material-symbols-rounded {
+  color: #2e7d32 !important;
+}
+
+.bottom-nav .nav-item.active,
+.bottom-nav .nav-item.active .material-symbols-rounded,
+.bottom-nav .nav-item.active .nav-icon,
+.bottom-nav .nav-main.active .nav-plate .material-symbols-rounded {
+  color: #1b5e20 !important;
+  font-weight: 900 !important;
+}
+
+.bottom-nav .nav-main .nav-plate {
+  width: 58px;
+  height: 58px;
+}
+
+
+/* v4.10.1 — spójna nawigacja portrait/landscape, mobile/desktop */
+:root {
+  --nav-green: #2e7d32;
+  --nav-active: #1b5e20;
+}
+
+/* Wspólne: tylko zielone ikony/teksty, bez ramek i bez tła aktywnego przycisku. */
+.bottom-nav .nav-item,
+.bottom-nav .nav-item.active,
+.bottom-nav .nav-main,
+.bottom-nav .nav-main.active,
+.bottom-nav .nav-plate,
+.bottom-nav .nav-main.active .nav-plate {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.bottom-nav .nav-item {
+  color: var(--nav-green) !important;
+}
+
+.bottom-nav .nav-item .material-symbols-rounded,
+.bottom-nav .nav-item .nav-icon,
+.bottom-nav .nav-main .nav-plate .material-symbols-rounded {
+  color: var(--nav-green) !important;
+}
+
+.bottom-nav .nav-item.active,
+.bottom-nav .nav-item.active .material-symbols-rounded,
+.bottom-nav .nav-item.active .nav-icon,
+.bottom-nav .nav-main.active .nav-plate .material-symbols-rounded {
+  color: var(--nav-active) !important;
+  font-weight: 900 !important;
+  text-shadow: 0 2px 6px rgba(27, 94, 32, 0.26);
+  filter: drop-shadow(0 2px 4px rgba(27, 94, 32, 0.18));
+}
+
+/* Twój jadłospis jest tylko lekko większy, bez koła i obramowania. */
+.bottom-nav .nav-main .nav-plate {
+  width: auto !important;
+  height: auto !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+}
+
+.bottom-nav .nav-main .nav-plate .material-symbols-rounded {
+  font-size: 27px !important;
+}
+
+/* Portrait mobile: dolny pasek, trzy przyciski równomiernie. Ustawienia są ukryte. */
+@media (orientation: portrait) and (max-width: 759px) {
+  body {
+    padding-left: 0 !important;
+  }
+
+  .app-shell {
+    padding-bottom: 104px !important;
+  }
+
+  .bottom-nav {
+    top: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: auto !important;
+    border-right: 0 !important;
+    border-top: 1px solid var(--line) !important;
+    display: block !important;
+  }
+
+  .bottom-nav-inner.nav-three {
+    max-width: none !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 8px 8px calc(8px + env(safe-area-inset-bottom)) !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: end !important;
+    justify-content: stretch !important;
+    gap: 4px !important;
+  }
+
+  .bottom-nav .nav-item[data-route="shopping"] {
+    order: 1 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="today"] {
+    order: 2 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="library"] {
+    order: 3 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="settings"] { display: grid !important; }
+}
+
+/* Portrait desktop/tablet: dolny pasek, cztery przyciski wyśrodkowane. */
+@media (orientation: portrait) and (min-width: 760px) {
+  body {
+    padding-left: 0 !important;
+  }
+
+  .app-shell {
+    padding-bottom: 104px !important;
+  }
+
+  .bottom-nav {
+    top: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: auto !important;
+    border-right: 0 !important;
+    border-top: 1px solid var(--line) !important;
+    display: block !important;
+  }
+
+  .bottom-nav-inner.nav-three {
+    max-width: 560px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 8px 8px calc(8px + env(safe-area-inset-bottom)) !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    align-items: end !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+
+  .bottom-nav .nav-item[data-route="shopping"] {
+    order: 1 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="today"] {
+    order: 2 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="library"] {
+    order: 3 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="settings"] {
+    order: 4 !important;
+    display: grid !important;
+  }
+}
+
+/* Landscape mobile i desktop: boczny pasek. Od góry:
+   Twój jadłospis, Lista zakupów, Zasoby. Ustawienia przy dole. */
+@media (orientation: landscape) {
+  body {
+    padding-left: 72px !important;
+  }
+
+  .app-shell {
+    padding-bottom: 24px !important;
+  }
+
+  .bottom-nav {
+    top: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 64px !important;
+    border-top: 0 !important;
+    border-right: 1px solid var(--line) !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    display: flex !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+  }
+
+  .bottom-nav-inner.nav-three {
+    width: 100% !important;
+    height: 100% !important;
+    padding: calc(12px + env(safe-area-inset-top)) 4px calc(12px + env(safe-area-inset-bottom)) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+  }
+
+  .bottom-nav .nav-item {
+    width: 56px !important;
+    min-height: 56px !important;
+    padding: 5px 2px !important;
+    display: grid !important;
+    justify-items: center !important;
+    align-content: center !important;
+    gap: 4px !important;
+    font-size: 10px !important;
+    line-height: 1.05 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="today"] {
+    order: 1 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="shopping"] {
+    order: 2 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="library"] {
+    order: 3 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="settings"] {
+    order: 99 !important;
+    margin-top: auto !important;
+    display: grid !important;
+  }
+
+  .bottom-nav .nav-main,
+  .bottom-nav .nav-main.active {
+    margin-top: 0 !important;
+    transform: none !important;
+    min-height: 60px !important;
+  }
+
+  .bottom-nav .nav-main .nav-plate .material-symbols-rounded {
+    font-size: 29px !important;
+  }
+
+  /* W landscape ustawienia są na bocznym pasku, więc chowamy górny przycisk ustawień ekranu głównego. */
+  #todayScreen [data-action="home-menu"] {
+    display: none !important;
+  }
+}
+
+
+/* v4.11.0 */
+:root {
+  --nav-main-color: #bf5b04;
+  --nav-main-active: #8f4300;
+}
+
+.bottom-nav .nav-main,
+.bottom-nav .nav-main .material-symbols-rounded,
+.bottom-nav .nav-main .nav-plate .material-symbols-rounded,
+.bottom-nav .nav-main span {
+  color: var(--nav-main-color) !important;
+}
+
+.bottom-nav .nav-main.active,
+.bottom-nav .nav-main.active .material-symbols-rounded,
+.bottom-nav .nav-main.active .nav-plate .material-symbols-rounded,
+.bottom-nav .nav-main.active span {
+  color: var(--nav-main-active) !important;
+  text-shadow: 0 2px 6px rgba(191, 91, 4, 0.25);
+  filter: drop-shadow(0 2px 4px rgba(191, 91, 4, 0.18));
+}
+
+.bottom-nav .nav-item[data-route="today"] { order: 1 !important; }
+.bottom-nav .nav-item[data-route="shopping"] { order: 2 !important; }
+.bottom-nav .nav-item[data-route="library"] { order: 3 !important; }
+.bottom-nav .nav-item[data-route="settings"] { order: 4 !important; }
+
+
+/* v4.11.1 — ustawienia widoczne także w mobile portrait */
+@media (orientation: portrait) and (max-width: 759px) {
+  .bottom-nav-inner.nav-three {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 2px !important;
+  }
+
+  .bottom-nav .nav-item[data-route="today"] {
+    order: 1 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="shopping"] {
+    order: 2 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="library"] {
+    order: 3 !important;
+  }
+
+  .bottom-nav .nav-item[data-route="settings"] {
+    order: 4 !important;
+    display: grid !important;
+  }
+
+  .bottom-nav .nav-item {
+    font-size: 11px !important;
+    padding-inline: 2px !important;
+  }
+}
+
+
+/* v4.11.2 — kompaktowy widok ustawień */
+.settings-screen .sub-title {
+  font-size: 22px;
+}
+
+.settings-form {
+  display: grid;
+  gap: 12px;
+}
+
+.settings-card {
+  padding: 14px 14px !important;
+}
+
+.settings-card .section-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.settings-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.compact-setting-row {
+  min-height: 38px;
+  padding: 6px 0;
+  font-size: 13px;
+  gap: 10px;
+}
+
+.compact-control {
+  width: 112px !important;
+  min-height: 34px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.settings-hint {
+  margin: -4px 0 10px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.settings-actions {
+  display: grid;
+  gap: 8px;
+}
+
+.compact-btn {
+  min-height: 38px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.settings-save-row {
+  margin-top: 2px;
+}
+
+
+/* v4.11.3 — link autora */
+.settings-author-link {
+  text-decoration: none;
+}
+
+.settings-author-link:hover {
+  text-decoration: underline;
+}
+
+
+/* v4.11.5 — spójne ikony import/eksport i tytuł produktów */
+
+
+.centered-title {
+  text-align: center;
+  flex: 1;
+}
+
+
+/* v4.11.6 — kompaktowy zakres dat w Liście zakupów */
+.shopping-date-range-compact,
+.shopping-date-range,
+.shopping-range,
+.date-range {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
+
+.shopping-date-range-compact label,
+.shopping-date-range label,
+.shopping-range label,
+.date-range label,
+.shopping-date-range-compact .form-group,
+.shopping-date-range .form-group,
+.shopping-range .form-group,
+.date-range .form-group {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  flex: 1 1 0 !important;
+  font-size: 11px !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase;
+}
+
+.shopping-date-range-compact input,
+.shopping-date-range input,
+.shopping-range input,
+.date-range input,
+[data-shopping-date] {
+  min-height: 30px !important;
+  height: 30px !important;
+  padding: 4px 6px !important;
+  font-size: 11px !important;
+  line-height: 1 !important;
+  max-width: 122px !important;
+}
+
+[data-shopping-date] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+}
+
+
+/* v4.11.7 — IG */
+.product-gi {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.product-row small {
+  line-height: 1.25;
+}
+
+
+/* v4.11.8 — ustawienia: wyśrodkowany tytuł */
+.settings-screen .sub-header {
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: center;
+}
+
+.settings-screen .sub-title {
+  grid-column: 2;
+  text-align: center !important;
+  justify-self: center;
+}
+
+/* v4.11.8 — lista zakupów: zakres dat w jednej linii, pełna szerokość */
+.shopping-date-range-compact,
+.shopping-date-range,
+.shopping-range,
+.date-range,
+.date-controls,
+.shopping-controls {
+  width: 100% !important;
+}
+
+.shopping-date-range-compact {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 8px !important;
+  align-items: center !important;
+}
+
+.shopping-date-range-compact label,
+.shopping-date-range-compact .form-group {
+  width: 100% !important;
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: auto minmax(0, 1fr) !important;
+  gap: 4px !important;
+  align-items: center !important;
+  margin: 0 !important;
+  font-size: 11px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.shopping-date-range-compact input,
+.shopping-date-range-compact [data-shopping-date] {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  padding: 4px 6px !important;
+  font-size: 11px !important;
+}
+
+
+/* v4.11.9 — szczegóły produktu: IG i ikony źródeł */
+.product-nutrition-source {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  color: var(--muted);
+}
+
+.product-nutrition-source .material-symbols-rounded {
+  font-size: 20px;
+}
+
+.product-nutrition-values span {
+  gap: 3px;
+}
+
+
+/* v4.12.0 — kompaktowe źródła danych i znacznik IG */
+.product-nutrition-row {
+  grid-template-columns: 24px minmax(0, 1fr) !important;
+  gap: 6px !important;
+  align-items: center;
+}
+
+.product-nutrition-source {
+  min-width: 20px !important;
+  width: 20px !important;
+  flex: 0 0 20px !important;
+}
+
+.product-nutrition-source .material-symbols-rounded {
+  font-size: 17px !important;
+}
+
+.product-nutrition-values {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+  overflow-x: auto;
+  min-width: 0;
+}
+
+.product-nutrition-values > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex: 0 0 auto;
+}
+
+.gi-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1;
+  font-size: 9px;
+  font-weight: 900;
+  color: #1f2937;
+  border: 1px solid rgba(31, 41, 55, 0.16);
+}
+
+.gi-badge span {
+  font-size: 8px;
+  letter-spacing: -0.02em;
+}
+
+.gi-badge strong {
+  font-size: 10px;
+}
+
+.gi-low {
+  background: #b7e4c7;
+}
+
+.gi-medium {
+  background: #ffe08a;
+}
+
+.gi-high {
+  background: #f8b4a8;
+}
+
+.gi-unknown {
+  background: transparent;
+}
+
+
+/* v4.12.1 — baza IG i układ wartości odżywczych */
+.product-nutrition-row {
+  grid-template-columns: 26px minmax(0, 1fr) !important;
+  gap: 8px !important;
+  align-items: center;
+}
+
+.product-nutrition-source {
+  min-width: 24px !important;
+  width: 24px !important;
+  flex: 0 0 24px !important;
+  color: var(--green) !important;
+  opacity: 1 !important;
+}
+
+.product-nutrition-source .material-symbols-rounded {
+  font-size: 21px !important;
+  font-variation-settings: "FILL" 0, "wght" 650, "GRAD" 0, "opsz" 24;
+}
+
+.product-nutrition-values {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  align-items: center !important;
+  gap: 6px !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+.product-nutrition-values > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important;
+  min-width: 0 !important;
+  font-size: 12px;
+}
+
+.product-nutrition-values .material-symbols-rounded {
+  font-size: 17px;
+}
+
+.product-gi-value {
+  gap: 4px !important;
+}
+
+.gi-label {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1;
+  font-size: 9px;
+  font-weight: 900;
+  color: #1f2937;
+  border: 1px solid rgba(31, 41, 55, 0.18);
+}
+
+.gi-low {
+  background: #b7e4c7;
+}
+
+.gi-medium {
+  background: #ffe08a;
+}
+
+.gi-high {
+  background: #f8b4a8;
+}
+
+.gi-unknown {
+  background: transparent;
+}
+
+
+/* v4.12.2 — IG bez kółka; kolor ma sama wartość */
+.gi-label,
+.gi-badge {
+  width: auto !important;
+  height: auto !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  display: inline !important;
+  color: inherit !important;
+}
+
+.gi-inline-label {
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.gi-value {
+  font-weight: 900;
+}
+
+.gi-value.gi-low,
+.gi-low.gi-value {
+  color: #2e7d32;
+  background: transparent !important;
+}
+
+.gi-value.gi-medium,
+.gi-medium.gi-value {
+  color: #b77900;
+  background: transparent !important;
+}
+
+.gi-value.gi-high,
+.gi-high.gi-value {
+  color: #c62828;
+  background: transparent !important;
+}
+
+.gi-value.gi-unknown,
+.gi-unknown.gi-value {
+  color: var(--muted);
+  background: transparent !important;
+}
+
+.product-list-gi {
+  white-space: nowrap;
+}
+
+
+/* v4.12.3 — jednolity kolor nawigacji i aktywny stan jako podkreślenie */
+.bottom-nav .nav-item,
+.bottom-nav .nav-main,
+.bottom-nav .nav-main span,
+.bottom-nav .nav-item span,
+.bottom-nav .nav-item .material-symbols-rounded,
+.bottom-nav .nav-main .nav-plate .material-symbols-rounded {
+  color: var(--nav-green, #2e7d32) !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.bottom-nav .nav-item.active,
+.bottom-nav .nav-main.active {
+  color: var(--nav-active, #1b5e20) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.bottom-nav .nav-item.active > span:last-child,
+.bottom-nav .nav-main.active > span:last-child {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-shadow: 0 2px 5px rgba(27, 94, 32, 0.18);
+}
+
+.bottom-nav .nav-item.active .material-symbols-rounded,
+.bottom-nav .nav-main.active .material-symbols-rounded {
+  color: var(--nav-active, #1b5e20) !important;
+  filter: drop-shadow(0 2px 3px rgba(27, 94, 32, 0.14));
+}
+
+.product-list-gi {
+  display: none !important;
+}
+
+
+/* v4.12.4 — aktywny Twój jadłospis taki sam jak aktywne pozostałe przyciski */
+.bottom-nav .nav-item.active,
+.bottom-nav .nav-item.active span,
+.bottom-nav .nav-item.active .material-symbols-rounded,
+.bottom-nav .nav-main.active,
+.bottom-nav .nav-main.active span,
+.bottom-nav .nav-main.active .material-symbols-rounded,
+.bottom-nav .nav-main.active .nav-plate .material-symbols-rounded {
+  color: var(--nav-active, #1b5e20) !important;
+}
+
+.bottom-nav .nav-main,
+.bottom-nav .nav-main span,
+.bottom-nav .nav-main .material-symbols-rounded,
+.bottom-nav .nav-main .nav-plate .material-symbols-rounded {
+  color: var(--nav-green, #2e7d32) !important;
+}
+
+.bottom-nav .nav-main.active > span:last-child,
+.bottom-nav .nav-item.active > span:last-child {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+  text-shadow: 0 2px 5px rgba(27, 94, 32, 0.18) !important;
+}
+
+
+/* v4.12.6 — zerowanie aplikacji */
+.danger-btn {
+  min-height: 44px;
+  border: 0;
+  border-radius: 14px;
+  padding: 10px 14px;
+  background: rgba(198, 40, 40, 0.10);
+  color: #b71c1c;
+  font-weight: 900;
+}
+
+.danger-btn:hover {
+  background: rgba(198, 40, 40, 0.16);
+}
+
+
+/* v4.12.8 — ciemny motyw i tryb Auto */
+:root[data-theme="dark"] {
+  --bg: #121712;
+  --surface: #1b221c;
+  --surface-soft: #232d24;
+  --card: #1e261f;
+  --text: #eef5ed;
+  --muted: #aebbad;
+  --line: rgba(238, 245, 237, 0.12);
+  --green: #8ccf8a;
+  --green-dark: #b5e3b3;
+  --nav-green: #8ccf8a;
+  --nav-active: #d6f4d4;
+  --danger: #ffb4ab;
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at top, rgba(140, 207, 138, 0.10), transparent 30%),
+    var(--bg);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .screen,
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .modal,
+:root[data-theme="dark"] .bottom-nav {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .list-row,
+:root[data-theme="dark"] .meal-card,
+:root[data-theme="dark"] .product-recipe-item {
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .form-control,
+:root[data-theme="dark"] .form-select,
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea {
+  background: #111711;
+  color: var(--text);
+  border-color: var(--line);
+}
+
+:root[data-theme="dark"] .form-control::placeholder,
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder {
+  color: #7f8b7d;
+}
+
+:root[data-theme="dark"] .muted,
+:root[data-theme="dark"] small {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .primary-btn {
+  background: #8ccf8a;
+  color: #102010;
+}
+
+:root[data-theme="dark"] .secondary-btn {
+  background: rgba(140, 207, 138, 0.12);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .danger-btn {
+  background: rgba(255, 180, 171, 0.12);
+  color: #ffb4ab;
+}
+
+:root[data-theme="dark"] .bottom-nav {
+  background: rgba(27, 34, 28, 0.96) !important;
+  border-color: var(--line) !important;
+}
+
+:root[data-theme="dark"] .bottom-nav .nav-item,
+:root[data-theme="dark"] .bottom-nav .nav-item span,
+:root[data-theme="dark"] .bottom-nav .material-symbols-rounded {
+  color: var(--nav-green) !important;
+}
+
+:root[data-theme="dark"] .bottom-nav .nav-item.active,
+:root[data-theme="dark"] .bottom-nav .nav-item.active span,
+:root[data-theme="dark"] .bottom-nav .nav-item.active .material-symbols-rounded {
+  color: var(--nav-active) !important;
+}
+
+:root[data-theme="dark"] a {
+  color: #a7d8ff;
+}
+
+:root[data-theme="dark"] .gi-value.gi-low {
+  color: #8ccf8a;
+}
+
+:root[data-theme="dark"] .gi-value.gi-medium {
+  color: #ffd166;
+}
+
+:root[data-theme="dark"] .gi-value.gi-high {
+  color: #ff8a80;
+}
+
+
+/* v1.0.1 — korekty zasobów i IG */
+.gi-inline-label,
+.product-gi-value .gi-inline-label {
+  color: var(--green, #2e7d32) !important;
+  font-weight: 900;
+}
+
+.library-list .more-row .muted {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+
+/* v1.0.5 — komunikaty offline/aktualizacji */
+.app-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(92px + env(safe-area-inset-bottom));
+  z-index: 9999;
+  transform: translateX(-50%) translateY(16px);
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(23, 36, 23, 0.94);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.app-toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+:root[data-theme="dark"] .app-toast {
+  background: rgba(238,245,237,0.94);
+  color: #121712;
+}
+
+
+/* v1.0.6 — tytuł i motywy */
+.today-header,
+.main-header,
+.hero-header,
+.app-header {
+  text-align: center;
+}
+
+.today-header .title,
+.today-header h1,
+.main-header .title,
+.main-header h1,
+.hero-header .title,
+.hero-header h1,
+.app-title,
+h1.app-title {
+  text-align: center !important;
+  justify-self: center;
+  width: 100%;
+}
+
+/* W nagłówkach z przyciskiem z lewej tytuł pozostaje faktycznie w centrum. */
+.screen > header.sub-header {
+  grid-template-columns: 44px 1fr 44px;
+}
+
+.screen > header.sub-header .sub-title {
+  text-align: center;
+  justify-self: center;
+}
+
+/* Poprawione zmienne ciemnego motywu — nadpisanie pełne i późne w kaskadzie. */
+:root[data-theme="dark"],
+body[data-theme="dark"] {
+  --bg: #101510;
+  --surface: #182019;
+  --surface-soft: #202a21;
+  --card: #1b241c;
+  --text: #eef5ed;
+  --muted: #aebbad;
+  --line: rgba(238, 245, 237, 0.14);
+  --green: #8ccf8a;
+  --green-dark: #d6f4d4;
+  --nav-green: #8ccf8a;
+  --nav-active: #d6f4d4;
+  --danger: #ffb4ab;
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] body,
+body[data-theme="dark"] {
+  background:
+    radial-gradient(circle at top, rgba(140, 207, 138, 0.10), transparent 30%),
+    var(--bg) !important;
+  color: var(--text) !important;
+}
+
+:root[data-theme="dark"] .screen,
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .modal,
+:root[data-theme="dark"] .modal-card,
+:root[data-theme="dark"] .bottom-nav,
+body[data-theme="dark"] .screen,
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .modal,
+body[data-theme="dark"] .modal-card,
+body[data-theme="dark"] .bottom-nav {
+  background-color: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+}
+
+:root[data-theme="dark"] .list-row,
+:root[data-theme="dark"] .meal-card,
+:root[data-theme="dark"] .product-recipe-item,
+:root[data-theme="dark"] .more-row,
+body[data-theme="dark"] .list-row,
+body[data-theme="dark"] .meal-card,
+body[data-theme="dark"] .product-recipe-item,
+body[data-theme="dark"] .more-row {
+  background-color: var(--card) !important;
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+}
+
+:root[data-theme="dark"] .form-control,
+:root[data-theme="dark"] .form-select,
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea,
+body[data-theme="dark"] .form-control,
+body[data-theme="dark"] .form-select,
+body[data-theme="dark"] input,
+body[data-theme="dark"] select,
+body[data-theme="dark"] textarea {
+  background: #0f150f !important;
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+}
+
+:root[data-theme="dark"] .muted,
+:root[data-theme="dark"] small,
+body[data-theme="dark"] .muted,
+body[data-theme="dark"] small {
+  color: var(--muted) !important;
+}
+
+:root[data-theme="dark"] .bottom-nav .nav-item,
+:root[data-theme="dark"] .bottom-nav .nav-item span,
+:root[data-theme="dark"] .bottom-nav .material-symbols-rounded,
+body[data-theme="dark"] .bottom-nav .nav-item,
+body[data-theme="dark"] .bottom-nav .nav-item span,
+body[data-theme="dark"] .bottom-nav .material-symbols-rounded {
+  color: var(--nav-green) !important;
+}
+
+:root[data-theme="dark"] .bottom-nav .nav-item.active,
+:root[data-theme="dark"] .bottom-nav .nav-item.active span,
+:root[data-theme="dark"] .bottom-nav .nav-item.active .material-symbols-rounded,
+body[data-theme="dark"] .bottom-nav .nav-item.active,
+body[data-theme="dark"] .bottom-nav .nav-item.active span,
+body[data-theme="dark"] .bottom-nav .nav-item.active .material-symbols-rounded {
+  color: var(--nav-active) !important;
+}
+
+
+/* v1.0.7 — ustawienia zapisywane automatycznie */
+.settings-autosave-note {
+  margin: -2px 2px 2px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* v1.0.8 — visual polish / premium UX */
+.app-view {
+  animation: viewFadeIn 180ms ease both;
+}
+
+@keyframes viewFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card,
+.list-row,
+.meal-card,
+.product-recipe-item,
+.more-row {
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+@media (hover: hover) {
+  .card:hover,
+  .list-row:hover,
+  .meal-card:hover,
+  .product-recipe-item:hover,
+  .more-row:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.bottom-nav {
+  background: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 -10px 30px rgba(23, 36, 23, 0.08);
+}
+
+.bottom-nav .nav-item.active > span:last-child {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+}
+
+.bottom-nav .nav-item.active .material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 650, "GRAD" 0, "opsz" 24;
+}
+
+.bottom-nav .nav-main .material-symbols-rounded {
+  font-size: 29px !important;
+}
+
+.today-dashboard {
+  margin: 12px 0 16px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  background:
+    linear-gradient(135deg, rgba(46, 125, 50, 0.13), rgba(46, 125, 50, 0.03)),
+    var(--card, #fff);
+}
+
+.today-dashboard .eyebrow {
+  margin: 0 0 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--green, #2e7d32);
+  font-weight: 900;
+}
+
+.today-dashboard h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.kcal-ring {
+  --size: 88px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at center, var(--card, #fff) 58%, transparent 60%),
+    conic-gradient(var(--green, #2e7d32) calc(var(--progress) * 1%), rgba(46,125,50,.12) 0);
+  box-shadow: inset 0 0 0 1px rgba(46, 125, 50, 0.08);
+}
+
+.kcal-ring strong {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.kcal-ring span {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.empty-state {
+  margin: 16px 0;
+  padding: 28px 18px;
+  text-align: center;
+  border: 1px dashed var(--line);
+  border-radius: 22px;
+  background: rgba(46, 125, 50, 0.04);
+}
+
+.empty-state > .material-symbols-rounded {
+  font-size: 38px;
+  color: var(--green);
+}
+
+.empty-state h2 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+}
+
+.empty-state p {
+  margin: 0 auto 14px;
+  max-width: 34ch;
+  color: var(--muted);
+}
+
+.modal-root.is-actions-sheet .modal-card,
+.modal-card.actions-sheet {
+  margin: auto 0 0;
+  width: 100%;
+  max-width: none;
+  border-radius: 28px 28px 0 0;
+  animation: sheetUp 180ms ease both;
+}
+
+.sheet-handle,
+.modal-root.is-actions-sheet .modal-card::before {
+  content: "";
+  width: 44px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--line);
+  margin: 0 auto 12px;
+  display: block;
+}
+
+@keyframes sheetUp {
+  from { transform: translateY(18px); opacity: .7; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (min-width: 980px) and (orientation: landscape) {
+  .app-view.route-products,
+  .app-view.route-recipes,
+  .app-view.route-plans,
+  .app-view.route-settings,
+  .app-view.route-shopping {
+    max-width: 1180px;
+    margin-inline: auto;
+  }
+
+  .route-products .product-list,
+  .route-recipes .recipe-list,
+  .route-plans .plans-list,
+  .route-shopping .shopping-list,
+  .settings-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .settings-form .settings-autosave-note {
+    grid-column: 1 / -1;
+  }
+}
+
+/* bardziej miękki i spójny dark mode */
+:root[data-theme="dark"],
+body[data-theme="dark"] {
+  --bg: #111611;
+  --surface: #171f18;
+  --surface-soft: #202920;
+  --card: #1b241c;
+  --text: #eef5ed;
+  --muted: #aebbad;
+  --line: rgba(238,245,237,.13);
+}
+
+:root[data-theme="dark"] .today-dashboard,
+body[data-theme="dark"] .today-dashboard {
+  background:
+    linear-gradient(135deg, rgba(140, 207, 138, 0.14), rgba(140, 207, 138, 0.04)),
+    var(--card) !important;
+}
+
+:root[data-theme="dark"] .bottom-nav,
+body[data-theme="dark"] .bottom-nav {
+  background: rgba(23, 31, 24, 0.80) !important;
+  box-shadow: 0 -10px 30px rgba(0,0,0,.24);
+}

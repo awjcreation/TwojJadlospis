@@ -1,0 +1,47 @@
+{
+  "id": "import-makaron-z-serem",
+  "title": "makaron z serem",
+  "category": "Importowane",
+  "recipeType": "single",
+  "mealCategory": "lunch",
+  "prep": "",
+  "image": "",
+  "ingredients": [
+    {
+      "id": "ing-makaron-22613",
+      "name": "makaron",
+      "weight": 60.0,
+      "kcal100": 366.7,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-jogurt-naturalny-23976",
+      "name": "jogurt naturalny",
+      "weight": 48.0,
+      "kcal100": 60.4,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-cukier-68696",
+      "name": "cukier",
+      "weight": 5.0,
+      "kcal100": 400.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    },
+    {
+      "id": "ing-ser-bialy-chudy-81888",
+      "name": "ser biały chudy",
+      "weight": 50.0,
+      "kcal100": 104.0,
+      "protein100": 0,
+      "fat100": 0,
+      "carbs100": 0
+    }
+  ]
+}
